@@ -3,7 +3,13 @@ import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <div>
+    <header class="p-2 flex justify-between mb-1">
+      <div>
+      <img src="/images/logo.png" alt="Logo" class= "w-32" />
+      </div>
+      <div>
+        
+      </div>
       <nav>
         <ul>
           <li>
@@ -16,9 +22,8 @@ const Header = () => {
             <NavLink to="/about">About</NavLink>
           </li>
         </ul>
-
       </nav>
-    </div>
+    </header>
   )
 }
 
