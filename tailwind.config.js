@@ -5,11 +5,26 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+
     extend: {
+
+      screens: {
+        'sm': '576px',
+        // => @media (min-width: 576px) { ... }
+
+        'md': '960px',
+        // => @media (min-width: 960px) { ... }
+
+        'lg': '1440px',
+        // => @media (min-width: 1440px) { ... }
+      },
       colors: {
-        'vuejs' : "#49e659"
+        'p-color' : "#0b0b0b",
+        's-color' : "#ffffff"
       },
     },
   },
-  plugins: [],
-}
+  plugins: [
+    require('tailwind-hamburgers')
+  ],}
+
