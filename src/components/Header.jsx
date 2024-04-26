@@ -22,9 +22,10 @@ const Header = () => {
         * found at this url : 
         * https://www.patrykgulas.com/hamburgers 
         **/}
-          <div className={classNames(`tham tham-e-squeeze tham-w-5 mt-5 ml-2 mr-1.5`, { 'tham-active': opened}) } 
+          <div className={classNames(`tham tham-e-squeeze tham-w-5 mt-5 ml-2 mr-1.5 cursor-pointer`, { 'tham-active': opened}) } 
                onMouseDown= {(e) => { e.preventDefault(); }}
-               onClick={toggleMenu}>
+               onClick={toggleMenu}
+               id="header">
             <div className="tham-box">
               <div className={classNames(`tham-inner bg-p-color`, 
               { 'bg-s-color': opened, 'z-40': opened}) }/>

@@ -21,15 +21,15 @@ const Nav = ( { opened, toggleMenu } ) => {
         onClick={ closeNav }
         >
         <img src="/images/menu-back.png" alt="Menu Black Background" className= "absolute top-0 -left-0 h-screen z-0" />
-        <ul className="list-none text-2xl fixed left-2/4 top-2/4 transform -translate-x-1/5 -translate-y-1/2">
+        <ul className="list-none text-3xl fixed left-2/4 top-2/4 transform -translate-x-1/5 -translate-y-1/2 font-lato">
             <li className="p-3.5 text-s-color">
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/"><p>Home</p></NavLink>
             </li>
             <li className="p-3.5 text-s-color">
-            <NavLink to="/works">Works</NavLink>
+            <NavLink to="/works"><p>Works</p></NavLink>
             </li>          
             <li className="p-3.5 text-s-color">
-            <NavLink to="/about">About</NavLink>
+            <NavLink to="/about"><p>About</p></NavLink>
         </li>
     </ul>
   </nav>
