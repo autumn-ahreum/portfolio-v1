@@ -24,8 +24,6 @@ const Footer = () => {
         <Link to="/"><img src="/images/logo-w.png" alt="Logo" className= "max-w-28 float-right clear-start"  /></Link>
         <p className='text-xs bottom-0 -mt-2'>&copy; 2024 Ahreum Han All Rights Reserved</p>
       </div>
-    
-    
     </footer>
   )
 }    
