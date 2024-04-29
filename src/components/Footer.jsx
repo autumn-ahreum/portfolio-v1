@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <footer className="bg-p-color w-full pt-2 p-4 text-s-color font-lato">
+    <footer className="bg-p-color w-full pt-2 p-4 mt-40 text-s-color font-lato">
       <div className="footer-nav text-xs flex justify-between">
         <div className="left-container">
           <Link to="#header"><p>Back to Top</p></Link>
@@ -14,7 +14,6 @@ const Footer = () => {
           <Link to="/"><p>Works</p></Link>
         </div>
       </div>
-
       <div className="links-menu text-2xl pt-4 uppercase mt-8">
           <Link to="/"><p className="pt-3 ">Linkedin</p></Link>
           <Link to="/about"><p className="pt-3">GitHub</p></Link>

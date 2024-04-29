@@ -11,7 +11,7 @@ const Header = () => {
   const toggleMenu = () => {
     setOpened(!opened);
   };
-
+ 
   return (
     <header className={classNames(`pt-1.5`, { 'show': opened })}>
       <div className="first-low-container flex justify-between w-full">

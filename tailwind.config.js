@@ -9,12 +9,32 @@ export default {
   theme: {
 
     extend: {
+      animation: {
+        'fade-up': 'fade-up 0.7s',
+      },
+      keyframes: {
+        'fade-up': {
+          from: {
+            opacity: 0.6,
+            transform: 'translateY(20px)',
+          },
+          to: {
+            opacity: 1,
+            transform: 'translateY(0)',
+          },
+        },
+      },
 
+     
       fontFamily: {
         lato: ['"Lato"', ...defaultTheme.fontFamily.sans],
         tektur: ['"Tektur"', ...defaultTheme.fontFamily.sans],
-
-
+        'display': ['Oswald', ...defaultTheme.fontFamily.sans],
+        'body': ['"Open Sans"', ...defaultTheme.fontFamily.sans],
+        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        dmsdisplay: ['"DM Serif Display"', ...defaultTheme.fontFamily.serif],
+        rowdies: ['"Rowdies"', ...defaultTheme.fontFamily.serif],
+        vt323: ['"VT323"', 'monospace'],
       },
 
       fontSize: {
