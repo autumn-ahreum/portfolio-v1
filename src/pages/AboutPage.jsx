@@ -55,7 +55,6 @@ const AboutPage = () => {
           <Link><button id="[pb-info]" className='cursor px-2 -py-1 border border-black border-dotted shadow-md	rounded-sm hover:text-yellow-300 hover:bg-blue-700 focus:text-yellow-300 focus:bg-blue-800'>const paperBottle;</button></Link>
         </div>
       </div>
-     
       <div className='dev-section mt-3' id="dev-section">
         <div className='left-content mb-8'>
           <h2 className='font-tektur tracking-tight text-[20px] font-bold'>I’m Ahreum. A designer, developer and problem solver.</h2>
@@ -68,7 +67,7 @@ const AboutPage = () => {
           {Object.keys(skillData).sort().map(category => (
             <Link key={category}>
                 <button id={category}
-                  className={`px-1 py-[4px] font-lato uppercase text-sm leading-3 text-slate-700 focus:text-zinc-600 active:text-zinc-700 active:font-bold active:ring-slate-400 active:ring-1 active:ring-opacity-5 hover:text-zinc-500  transition ${currentCategory === category ? ' text-p-color text-[14px] font-bold' : ''}`}
+                  className={`px-1 py-[4px] font-lato uppercase text-sm leading-3 text-slate-700 focus:text-zinc-600  active:underline active:text-zinc-700 active:font-bold active:ring-slate-400 active:ring-1 active:ring-opacity-5 hover:text-zinc-500  transition ${currentCategory === category ? ' text-p-color text-[14px] font-bold underline underline-offset-2' : ''}`}
                   onClick={categoryHandler}
                 >
                   {category === 'development' ? 'development' : category === 'design' ? 'design' : category === 'all' ? 'all' : ''}
@@ -77,7 +76,7 @@ const AboutPage = () => {
             ))}
           </div>
           <div className='skills-container mx-[2px]'>
-            <ul className='flex flex-wrap gap-[6px] font-lato mt-2 text-[15px]'>
+            <ul className='flex flex-wrap gap-[6px] font-vt323 mt-2 text-[17px] font-light'>
               { skillData[currentCategory].sort().map(skill => (
                 <li key={skill} className={`px-2 bg-p-color mx-[6px] ${ turnAnimate ? 'animate-fade-up' : ''}  animate-ease-in-out animate-normal text-white `}>{skill}</li>     
                 )) }
@@ -99,18 +98,20 @@ const AboutPage = () => {
         </div>
       </div>
       </div>
-      <div className='extra-info-section mt-8' id="extra-info-section">
+      <div className='extra-info-section mt-12' id="extra-info-section">
         <h2 className='font-tektur tracking-tight text-4xl font-bold'>Extra! Extra!</h2>
-        <p className='font-lato font-light tracking-wide text-sm mt-4'>My first job was as a server at a Korean Spy Rice Cake Bistro 🍴 to save money for buying a camera when I was in middle school. (Somehow my favorite Korean food is spicy rice cake 🌶️🥵.)</p>
-        <p className='font-lato font-light tracking-wide text-sm mt-4'>Before working as a broadcast writer, I worked various part-time jobs, such as filming and editing classroom videos 📹, working as a barista ☕, and shooting weddings 💒, while attending school.</p>
-        <p className='font-lato font-light tracking-wide text-sm mt-4'>My favorite exercise is running 🏃‍♀️, and my favorite moment is hitting the sauna after a workout 🧖‍♀️.</p>
-        <p className='font-lato font-light tracking-wide text-sm mt-4'>My most valued virtue is 仁 (Ren), which means showing kindness and empathy in how we relate to others. It's like a universal ethic that transcends specific relationships, reminding us to always be kind, even in small things. 💖</p>        
-        <p className='font-lato font-light tracking-wide text-sm mt-4'>My favorite exercise is running 🏃‍♀️, and my favorite moment is hitting the sauna after a workout 🧖‍♀️.</p>
-        <p className='font-lato font-light tracking-wide text-sm mt-4'>I often take photos from my perspective 📸, but sometimes people don't understand the story behind those pictures.</p>
-        <p className='font-lato font-light tracking-wide text-sm mt-4'>I love being in nature 🏕️, especially camping and hiking in the mountains 🏔️; it's my ultimate relaxation.</p>
+        <p className='font-lato font-light tracking-wide text-sm mt-4 px-2'>My first job was as a server at a Korean Spy Rice Cake Bistro 🍴 to save money for buying a camera when I was in middle school. (Somehow my favorite Korean food is spicy rice cake 🌶️🥵.)</p>
+        <p className='font-lato font-light tracking-wide text-sm mt-4 px-2'>Before working as a broadcast writer, I worked various part-time jobs, such as filming and editing classroom videos 📹, working as a barista ☕, and shooting weddings 💒, while attending school.</p>
+        <p className='font-lato font-light tracking-wide text-sm mt-4 px-2'>My favorite exercise is running 🏃‍♀️, and my favorite moment is hitting the sauna after a workout 🧖‍♀️.</p>
+        <p className='font-lato font-light tracking-wide text-sm mt-4 px-2'>My most valued virtue is 仁 (Ren), which means showing kindness and empathy in how we relate to others. It's like a universal ethic that transcends specific relationships, reminding us to always be kind, even in small things. 💖</p>        
+        <p className='font-lato font-light tracking-wide text-sm mt-4 px-2'>I often take photos from my perspective 📸, but sometimes people don't understand the story behind those pictures.</p>
+        <p className='font-lato font-light tracking-wide text-sm mt-4 px-2'>I love being in nature 🏕️, especially camping and hiking in the mountains 🏔️; it's my ultimate relaxation.</p>
       </div>
-          
-
+      <div className='pb-info mt-12 w-full grid grid-cols-1 '>
+        <h2 className='font-tektur tracking-tight text-[32px] font-bold'>Why Paper Bottle?</h2>
+        <p className='font-lato font-light tracking-wide text-sm mt-4 px-2'>Do you remember ever seeing something that immediately made you want to purchase it, making you curious about what’s inside? For me, I’ve always had a particular impulse, especially when I see well-packaged paper bottles. Whether it’s sweet strawberry milk or smooth almond milk inside, I can’t help but be drawn in by that shiny packaging and crisp white design. Makes you think it’s not just good for the environment but also better for you, right? So, if I were to craft and share content, I’d want it to be like that beautifully packaged paper bottle—something you can’t resist but want to dive into. I want my digital content to be that go-to spot someone opens up and just wants to stick around.</p> 
+        <img className="mt-16 w-64 justify-self-end"src="/images/three-bottles.png" ></img>
+      </div>
     </main>
   )
 }

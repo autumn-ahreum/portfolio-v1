@@ -8,7 +8,10 @@ import Footer from "../components/Footer";
 import HomePage from "../pages/HomePage";
 import AboutPage from "../pages/AboutPage";
 import WorksPage from "../pages/WorksPage";
+import SingleJeju from "../pages/SingleJeju";
+import SingleMovas from "../pages/SingleMovas";
 import NotFoundPage from "../pages/NotFoundPage";
+
 
 const AppRouter = () => {
   return ( 
@@ -18,6 +21,8 @@ const AppRouter = () => {
             <Route path="/" element={<HomePage />}/>
             <Route path="/about" element={<AboutPage />}/>
             <Route path="/works" element={<WorksPage />}/>
+            <Route path="/works/jeju-island-tourism" element={<SingleJeju />} />
+            <Route path="/works/movas" element={<SingleMovas />} />
             <Route path="*" element={<NotFoundPage />}/>
         </Routes>
         <Footer />
