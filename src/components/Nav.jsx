@@ -20,7 +20,7 @@ const Nav = ( { opened, toggleMenu } ) => {
      })}
         onClick={ closeNav }
         >
-        <img src="/images/menu-back.png" alt="Menu Black Background" className= "absolute top-0 -left-0 h-screen " />
+        <img src="/images/menu-back.png" alt="Menu Black Background" className= "absolute top-0 -left-0 h-full" />
         <ul className="list-none text-3xl fixed left-2/4 top-2/4 transform -translate-x-1/5 -translate-y-1/2 font-lato">
             <li className="p-3.5 text-s-color">
             <NavLink to="/"><p>Home</p></NavLink>

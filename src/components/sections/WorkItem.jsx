@@ -14,10 +14,10 @@ const WorkItem = ({ title, briefInfo, techs, thumbImages}) => {
 
     <article className={`item-${title} mb-24`} id={`item-${title}`}>
         <div className='left-side flex flex-col mt-12 font-lato text-p-color'>
-            <h3 className='font-bold text-3xl uppercase'>{title}</h3>
+            <h3 className='font-semi-bold font-lato text-[34px]'>{title}</h3>
             <p className='pl-1 mt-2 text-[15px] leading-[22px] tracking-wide'>{briefInfo}</p>
             {techs.length > 0 && ( 
-                <ul className='techs pl-1 flex flex-wrap gap-1 font-lato text-base mt-4'>
+                <ul className='techs pl-1 flex flex-wrap gap-1 font-lato text-base mt-2'>
                     {techs.map((tech, index) => (
                         <React.Fragment key={index}>
                         <li className='px-[0.2px] font-bold'>{tech}</li>
