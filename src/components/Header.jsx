@@ -13,29 +13,29 @@ const Header = () => {
   };
  
   return (
-    <header className={classNames(`pt-1.5`, { 'show': opened })}>
+    <header className={classNames(`pt-1.5 max-w-screen-lg mx-auto`, { 'show': opened })}>
       <div className="first-low-container flex justify-between w-full">
         <div className="logo-container ml-1">
-            <Link to="/"><img src="/images/logo.png" alt="Logo" className= "max-w-28"  /></Link>
-          </div>
+          <Link to="/"><img src="/images/logo.png" alt="Logo" className= "max-w-32"  /></Link>
+        </div>
         {/** 
         * found at this url : 
         * https://www.patrykgulas.com/hamburgers 
         **/}
-          <div className={classNames(`tham tham-e-squeeze tham-w-5 mt-5 ml-2 mr-1.5 cursor-pointer`, { 'tham-active': opened}) } 
-               onMouseDown= {(e) => { e.preventDefault(); }}
-               onClick={toggleMenu}
-               id="header">
-            <div className="tham-box">
-              <div className={classNames(`tham-inner bg-p-color`, 
-              { 'bg-s-color': opened, 'z-40': opened}) }/>
-            </div>
+        <div className={classNames(`tham tham-e-squeeze tham-w-5 mt-6 ml-2 mr-3 cursor-pointer`, { 'tham-active': opened}) } 
+          onMouseDown= {(e) => { e.preventDefault(); }}
+          onClick={toggleMenu}
+          id="header">
+          <div className="tham-box">
+            <div className={classNames(`tham-inner bg-p-color`, 
+            { 'bg-s-color': opened, 'z-40': opened}) }/>
           </div>
+        </div>
       </div>
       <Nav className="nav-menu"
           toggleMenu ={ toggleMenu }
           opened ={ opened }
-          />
+      />
     </header>
   )
 }

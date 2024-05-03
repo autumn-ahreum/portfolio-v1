@@ -1,4 +1,11 @@
 #root {
-
+    
 }
 
+
+html, body {
+  }
+  
+  body {
+    margin: 0 auto;
+  }

@@ -70,7 +70,7 @@ const SingleMovas = () => {
       </section>
       <section className='reflextion-section mb-8'>
         <h2 className='font-tektur text-2xl'>- What I learned from the project</h2>
-        <p className='reflextion mt-4 mb-4 pl-1 px-3 font-lato font-light tracking-wide text-[15px]'>Honestly, understanding React wasn't easy for me, especially as it was the first framework I encountered while taking online classes and studying on my own. However, as I started building apps with React, my understanding improved significantly, and I realized how powerful this tool can be. My first React app still has a lot of room for improvement, but I plan to continue refining it.</p>
+        <p className='reflextion mt-4 mb-4 pl-1 px-3 font-lato font-light tracking-wide text-[15px]'>In my first React project with the Movie Database API, I gained a solid foundation in React fundamentals, such as components, state, props, and lifecycle methods. I also gained experience in API integration, learning how to make requests, handle responses, and update my app's state. Implementing routing for different sections introduced me to React Router for navigation. Managing state for user interactions and structuring components effectively taught me the importance of state management and component organization. Additionally, I learned about UI/UX design principles to enhance the look and feel of my app.</p>
       </section>
     </main>
   )
