@@ -9,6 +9,7 @@ export default {
   theme: {
 
     extend: {
+
       animation: {
         'fade-up': 'fade-up 0.7s',
       },
@@ -50,6 +51,12 @@ export default {
 
         'lg': '1440px',
         // => @media (min-width: 1440px) { ... }
+
+        '3xl': '1200px',
+        // => @media (min-width: 1200px) { ... }
+
+        '4xl': '1920px',
+        // => @media (min-width: 1920px) { ... }
       },
       colors: {
         'p-color' : "#0b0b0b",

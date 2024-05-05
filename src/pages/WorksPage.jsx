@@ -7,8 +7,8 @@ const WorksPage = () => {
 
 
   return (
-    <main className="ml-2 mr-2 mt-4"> 
-      <h1 className='font-tektur text-6xl font-bold'>Work</h1>
+    <main className="px-4 mt-4 max-w-screen-xl mx-auto"> 
+      <h1 className='font-tektur mt-8 text-6xl sm:text-8xl font-bold'>Work</h1>
       { workItemsData.map((item, index) => (
         <WorkItem 
           key = {index}

@@ -13,7 +13,7 @@ const Header = () => {
   };
  
   return (
-    <header className={classNames(`pt-1.5 max-w-screen-lg mx-auto`, { 'show': opened })}>
+    <header id='header' className={classNames(`pt-1.5 max-w-[1920px] mx-auto`, { 'show': opened })}>
       <div className="first-low-container flex justify-between w-full">
         <div className="logo-container ml-1">
           <Link to="/"><img src="/images/logo.png" alt="Logo" className= "max-w-32"  /></Link>
