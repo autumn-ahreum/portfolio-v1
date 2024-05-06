@@ -28,7 +28,7 @@ export const workItemsData =
       thumbImages: ['thumb-movas-1.png', 'thumb-movas-2.png'],
       displayImage: 'display-movas.png',
       githubLink: 'https://github.com/autumn-ahreum/movas',
-      siteLink: 'https://www.ahreum.xyz/mavas/',
+      siteLink: 'https://www.ahreum.xyz/movas/',
       projectDuration: '4weeks',
       collaboration: 'Solo',
       roles: 'Developer, UX/UI Designer'

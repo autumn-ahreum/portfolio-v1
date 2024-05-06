@@ -11,9 +11,7 @@ import WorksPage from "../pages/WorksPage";
 import SingleJeju from "../pages/SingleJeju";
 import SingleMovas from "../pages/SingleMovas";
 import SinglePawtopia from "../pages/SinglePawtopia";
-
 import NotFoundPage from "../pages/NotFoundPage";
-
 
 const AppRouter = () => {
 
