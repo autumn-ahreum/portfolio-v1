@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
+
 // Stack Section
 const developmentSkills = ['JavaScript', 'HTML', 'CSS', 'SASS', 'jQuery', 'PHP', 'ReactJS', 'WordPress', 'Gulp', 'Git', 'RestAPI', 'Shopify', 'WooCommerce', 'SQL', 'Tailwind'];
 const designSkills = ['Figma', 'Adobe XD', 'Photoshop', 'Illustrator', 'UI/UX design'];
@@ -44,15 +45,38 @@ const AboutPage = () => {
     console.log(copied);
   }
 
+    useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
+
+  //Page nav handle
+  const [violation, setViolation] = useState(null);
+
+  useEffect(() => {
+    if (violation) {
+      window.scrollTo({
+        top: violation.offsetTop,
+        behavior: "smooth"
+      });
+    }
+  }, [violation]);
+
+  const handleNavClick = (id) => {
+    const element = document.getElementById(id);
+    setViolation(element);
+  }
+
+  
+
   return (
     <main className="px-2 mt-4 max-w-[1000px] mx-auto"> 
       <h1 className='font-tektur mt-8 text-6xl sm:text-8xl font-bold'>Who I am</h1>
       <div className='font-vt323 px-4 text-sm mt-6 '>
         <p className='pb-1 text-xl'>Quick Menu - click! </p>
         <div className='in-page-nav font-vt323 text-base md:text-xl md:mb-8 flex gap-2'>
-          <a href="#dev-section"><button id="dev-info" className='cursor px-2 -py-1 border border-black border-dotted shadow-md	rounded-sm hover:text-yellow-300 hover:bg-blue-800  focus:text-yellow-200 focus:bg-blue-800'>DEV</button></a>
-          <Link><button id="extra-info" className='cursor px-2 -py-1 border border-black border-dotted shadow-md	rounded-sm hover:text-yellow-300 hover:bg-blue-800 focus:text-yellow-300 focus:bg-blue-800'>!not.DEV</button></Link>
-          <Link><button id="[pb-info]" className='cursor px-2 -py-1 border border-black border-dotted shadow-md	rounded-sm hover:text-yellow-300 hover:bg-blue-700 focus:text-yellow-300 focus:bg-blue-800'>const paperBottle;</button></Link>
+            <button id="dev-info-btn" onClick={() => handleNavClick('dev-section')} className='cursor px-2 -py-1 border border-black border-dotted shadow-md	rounded-sm hover:text-yellow-300 hover:bg-blue-800  focus:text-yellow-200 focus:bg-blue-800'>DEV</button>
+            <button id="extra-info-btn" onClick={() => handleNavClick('extra-info-section')}className='cursor px-2 -py-1 border border-black border-dotted shadow-md	rounded-sm hover:text-yellow-300 hover:bg-blue-800 focus:text-yellow-300 focus:bg-blue-800'>!not.DEV</button>
+          <button id="paper-bottle-btn" onClick={() => handleNavClick('paper-bottle-info')}className='cursor px-2 -py-1 border border-black border-dotted shadow-md	rounded-sm hover:text-yellow-300 hover:bg-blue-700 focus:text-yellow-300 focus:bg-blue-800'>const paperBottle;</button>
         </div>
       </div>
       <div className='dev-section mt-3' id="dev-section">
@@ -111,7 +135,7 @@ const AboutPage = () => {
       <div className='pb-info px-4 w-full grid grid-cols-1' >
         <h2 className='font-tektur tracking-tight text-[42px] sm:text-6xl font-bold'>Why Paper Bottle?</h2>
         <p className='font-lato font-light tracking-wide text-[15px] leading-6 sm:text-[18px] sm:leading-[30px] mt-4'>Do you remember ever seeing something that immediately made you want to purchase it, making you curious about what’s inside? For me, I’ve always had a particular impulse, especially when I see well-packaged paper bottles. Whether it’s sweet strawberry milk or smooth almond milk inside, I can’t help but be drawn in by that shiny packaging and crisp white design. Makes you think it’s not just good for the environment but also better for you, right? So, if I were to craft and share content, I’d want it to be like that beautifully packaged paper bottle—something you can’t resist but want to dive into. I want my digital content to be that go-to spot someone opens up and just wants to stick around.</p> 
-        <img className="mt-16 w-64 sm:w-96 justify-self-end"src="/images/three-bottles.png" ></img>
+        <img className="mt-16 w-64 sm:w-96 justify-self-end"src="/images/three-bottles.png" alt="logo" ></img>
       </div>
     </main>
   )

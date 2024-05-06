@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import SingleHero from '../components/sections/SingleHero';
 import { workItemsData } from '../workItemData';
+import Swiper from '../components/sections/Swiper';
 
 
 const SingleJeju = () => {
@@ -14,6 +15,11 @@ const SingleJeju = () => {
         };
       }, []);
 
+      useEffect(()=>{
+        window.scrollTo(0, 0);
+      },[])
+      
+
   return (
     <main className="px-4 mt-4 max-w-screen-xl mx-auto"> 
         <SingleHero
@@ -26,6 +32,8 @@ const SingleJeju = () => {
             duration = {workItemsData[0].projectDuration}
             collaboration = {workItemsData[0].collaboration}
             roles = {workItemsData[0].roles}
+            subTitle = {workItemsData[0].subTitle}
+
          />
          <div className='detail-content-wrapper w-11/12 mx-auto'>
           <section className='plan-section mb-8'>
@@ -66,7 +74,8 @@ const SingleJeju = () => {
             <p className='reflextion font-lato font-light tracking-wide text-base sm:text-[20px] sm:leading-8 mt-4'>This is my first project creating a website with multiple pages and features. While the site is functional and accessible to most users, I realized it doesn't follow best practices, especially regarding photo optimization, after learning more about it. My main focus was to make users feel the charm of 'Jeju Island' by showcasing large photos so I could learned experience on how to arrange important content and what features to include to make it more efficient. </p>
           </section>
          </div>
-        
+         <Swiper
+          currentWorkSlug={workItemsData[0].slug}/>
     </main>
   )
 }

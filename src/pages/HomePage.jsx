@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState , useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
 
 
+
 const HomePage = () => {
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
+  
+
   return (
     <main className='px-4 mt-4 max-w-screen-xl mx-auto' id='home-header'> 
       <div className='here-section mt-10'>

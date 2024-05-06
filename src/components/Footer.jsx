@@ -11,9 +11,9 @@ const Footer = () => {
           <HashLink to="#header" spy={true} smooth={true} offset={50} duration={500} ><p>Back to Top</p></HashLink>
         </div>
         <div className="right-container flex space-x-4 sm:gap-4">
-          <HashLink to="/#header"><p>Home</p></HashLink>
-          <HashLink to="/about#header" ><p>About</p></HashLink>
-          <HashLink to="/works#header"><p>Works</p></HashLink>
+          <HashLink to="/"><p>Home</p></HashLink>
+          <HashLink to="/about" ><p>About</p></HashLink>
+          <HashLink to="/works"><p>Work</p></HashLink>
         </div>
       </div>
       <div className="links-menu text-3xl pt-4 uppercase mt-8  max-w-screen-lg mx-auto sm:text-[42px] md:flex md:gap-10 md:ml-10 md:mt-6 lg:ml-20">

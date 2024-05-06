@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import SingleHero from '../components/sections/SingleHero';
 import { workItemsData } from '../workItemData';
+import Swiper from '../components/sections/Swiper';
 
 
 
@@ -15,6 +16,11 @@ const SingleMovas = () => {
     };
   }, []);
 
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
+  
+
   return (
     <main className="px-4 mt-4 max-w-screen-xl mx-auto"> 
       <SingleHero
@@ -24,9 +30,9 @@ const SingleMovas = () => {
         displayImage = {workItemsData[1].displayImage}
         siteLink = {workItemsData[1].siteLink}
         githubLink = {workItemsData[1].githubLink}
-        duration = {workItemsData[0].projectDuration}
-        collaboration = {workItemsData[0].collaboration}
-        roles = {workItemsData[0].roles}
+        collaboration = {workItemsData[1].collaboration}
+        roles = {workItemsData[1].roles}
+        subTitle = {workItemsData[1].subTitle}
       />
       <div className='detail-content-wrapper w-11/12 mx-auto'>
         <section className='plan-section mb-12'>
@@ -73,6 +79,8 @@ const SingleMovas = () => {
           <p className='reflextion font-lato font-light tracking-wide text-base sm:text-[20px] sm:leading-8 mt-4 '>In my first React project with the Movie Database API, I gained a solid foundation in React fundamentals, such as components, state, props, and lifecycle methods. I also gained experience in API integration, learning how to make requests, handle responses, and update my app's state. Implementing routing for different sections introduced me to React Router for navigation. Managing state for user interactions and structuring components effectively taught me the importance of state management and component organization. Additionally, I learned about UI/UX design principles to enhance the look and feel of my app.</p>
         </section>
       </div>
+      <Swiper
+          currentWorkSlug={workItemsData[1].slug}/>
     </main>
   )
 }

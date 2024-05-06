@@ -3,8 +3,12 @@ import WorkItem from '../components/sections/WorkItem';
 import { workItemsData } from '../workItemData';
 
 
+
 const WorksPage = () => {
 
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
 
   return (
     <main className="px-4 mt-4 max-w-screen-xl mx-auto"> 
@@ -16,6 +20,8 @@ const WorksPage = () => {
           briefInfo = {item.briefInfo}
           techs = {item.techs}
           thumbImages = {item.thumbImages}
+          subTitle = {item.subTitle}
+          slug = {item.slug}
           />
       )) }
     </main>

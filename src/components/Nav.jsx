@@ -26,7 +26,7 @@ const Nav = ( { opened, toggleMenu } ) => {
             <NavLink to="/"><p>Home</p></NavLink>
             </li>
             <li className="p-3.5 text-s-color">
-            <NavLink to="/works"><p>Works</p></NavLink>
+            <NavLink to="/works"><p>Work</p></NavLink>
             </li>          
             <li className="p-3.5 text-s-color">
             <NavLink to="/about"><p>About</p></NavLink>
