@@ -22,7 +22,33 @@ const HomePage = () => {
             </button>
           </HashLink>
         </div>
-        <img className="mt-6 mb-16 w-full object-cover sm:-mt-6 xl:w-[1071px] mx-auto block"src="/images/first-test.gif" alt='Stiring a Soup Illustration' ></img>
+        <picture>
+          {/* s-screen */}
+          <source
+            media="(max-width: 480px)"
+            srcSet="/images/first-test-small.gif 480w"
+            sizes="(max-width: 480px) 100vw"
+          />
+          {/* m-screen */}
+          <source
+            media="(min-width: 481px) and (max-width: 768px)"
+            srcSet="/images/first-test-medium.gif 768w"
+            sizes="(min-width: 481px) and (max-width: 768px) 100vw"
+          />
+          {/* l-screen */}
+          <source
+            media="(min-width: 769px)"
+            srcSet="/images/first-test-large.gif 1071w"
+            sizes="(min-width: 769px) 100vw"
+          />
+          <img
+            className="mt-6 mb-16 w-full object-cover sm:-mt-6 xl:w-[1071px] mx-auto block"
+            src="/images/first-test-large.gif"
+            alt="Stiring a Soup Animation"
+            width="1071"
+            height="746"
+          />
+        </picture>
       </div>
       <div className='Second-banner flex flex-col mt-36 mb-20 max-w-[1250px] mx-auto'>
         {/* <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--> */}
@@ -32,7 +58,34 @@ const HomePage = () => {
           <h2 className='text-2xl/[22px] font-mono font-bold tracking-tighter -pl-2 pt-3'>   User-centered Web Interface </h2>
           <h2 className='text-4xl font-menlo font-bold italic pt-3 pl-8'> Intuitive Flow</h2>        
           <h2 className='text-[31px] font-dmsdisplay font-bold pt-1 ' >Customized Solutions</h2> */}
-          <img src='images/second-banner.png' alt='Text-Thoughful Design User-centered Web Interface Intuitive Flow Customized Solutions'className='block  w-[1100px] self-center'></img>
+          <picture>
+            {/* s-screen */}
+            <source
+              media="(max-width: 480px)"
+              srcSet="/images/second-banner-small.png 480w"
+              sizes="(max-width: 480px) 100vw"
+            />
+            {/* m-screen */}
+            <source
+              media="(min-width: 481px) and (max-width: 768px)"
+              srcSet="/images/second-banner-medium.png 768w"
+              sizes="(min-width: 481px) and (max-width: 768px) 100vw"
+            />
+            {/* l-screen */}
+            <source
+              media="(min-width: 769px)"
+              srcSet="/images/second-banner-large.png 1030w"
+              sizes="(min-width: 769px) 100vw"
+            />
+            <img
+              src="/images/second-banner-large.png"
+              alt="Text-Thoughful Design User-centered Web Interface Intuitive Flow Customized Solutions"
+              className="block w-[1100px] self-center"
+              width="1100"
+              height="504"
+            />
+          </picture>
+
           <HashLink to='/works#header' className='self-end'>
             <button className="mt-8 bg-[url('/images/btn-shape-1.svg')] bg-no-repeat bg-cover w-32 h-10 md:w-40 md:h-12 xl:mt-20 px-2 hover:bg-[url('/images/btn-shape-2.svg')]"><p className="text-s-color text-sm md:text-base font-lato cursor vertical mt-3">View Work</p></button>
           </HashLink>
