@@ -28,8 +28,9 @@ const WorkItem = ({ title, briefInfo, techs, thumbImages, subTitle, slug}) => {
             </HashLink>    
         </div>
         <div className='thumbs-container right-side relative w-full text-center flex justify-center sm:mt-6'>
-            <img className='relative block z-0 transition-opacity border-stone-700 border-[0.5px] w-[500px] md:min-w-[650px] mx-auto my-0' src={`/images/${thumbImages[0]}`}></img>
-            <img className='absolute block z-[3] opacity-0 w-[500px] md:min-w-[650px] mx-auto my-0 transition-opacity hover:opacity-100 border-stone-700 border-[0.5px]' src={`/images/${thumbImages[1]}`}></img>
+            <img className='relative block z-0 transition-opacity border-stone-700 border-[0.5px] w-[500px] md:min-w-[650px] mx-auto my-0' src={`/images/${thumbImages[0]}`} alt={`Thumbnail ${slug}`}
+            ></img>
+            <img className='absolute block z-[3] opacity-0 w-[500px] md:min-w-[650px] mx-auto my-0 transition-opacity hover:opacity-100 border-stone-700 border-[0.5px]' src={`/images/${thumbImages[1]}`} alt={`Thumbnail ${slug}-2`}></img>
         </div>
     </article>
 )
