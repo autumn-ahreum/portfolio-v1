@@ -17,10 +17,10 @@ const WorksPage = () => {
         <WorkItem 
           key = {index}
           title = {item.title}
-          briefInfo = {item.briefInfo}
+          brief_info = {item.brief_info}
           techs = {item.techs}
-          thumbImages = {item.thumbImages}
-          subTitle = {item.subTitle}
+          thumb_images = {item.thumb_images}
+          sub_title = {item.sub_title}
           slug = {item.slug}
           />
       )) }

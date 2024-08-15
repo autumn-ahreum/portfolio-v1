@@ -27,15 +27,15 @@ export default ({currentWorkSlug}) => {
         {filteredItems.map(( item, index ) => (
           <SwiperSlide className='slide-container mx-auto border-2 border-p-color p-2 pb-5 rounded shadow-md min-w-[240px] max-w-[350px] min-h-[380px] sm:min-h-[410px] md:mx-2' key={index}>
           <div className='relative'>
-            <img src={`/images/${item.thumbImages[0]}`} alt={`${item.title} Thumb Image`}
+            <img src={`/images/${item.thumb_images[0]}`} alt={`${item.title} Thumb Image`}
             className='relative block z-0 transition-opacity mx-auto my-0 border border-1 rounded border-p-color' ></img>
-            <img src={`/images/${item.thumbImages[1]}`} alt={`${item.title} Thumb Image`}
+            <img src={`/images/${item.thumb_images[1]}`} alt={`${item.title} Thumb Image`}
             className='absolute top-0 block z-[3] opacity-0 transition-opacity hover:opacity-100 mx-auto my-0 border border-1 rounded border-p-color' ></img>
           </div>
           <HashLink to={`/works/${item.slug}#header`}>
             <p className='font-lato text-sm italic font-thick mt-2 uppercase hover:underline'>Click to go &gt;&gt;</p>
             <p className='capitalize text-[22px] mt-1 sm:text-2xl font-extrabold not-italic'>{item.title}</p>
-            <p className='px-[0.2px] font-lato pb-0 text-base tracking-tight'>{item.subTitle}</p>
+            <p className='px-[0.2px] font-lato pb-0 text-base tracking-tight'>{item.sub_title}</p>
           </HashLink>
           {item.techs.length > 0 && ( 
           <ul className='techs mt-2 flex flex-wrap gap-1 font-lato text-sm '>
