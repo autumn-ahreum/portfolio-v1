@@ -1,6 +1,8 @@
-import React from 'react'
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
+
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet';
+
 
 
 // Stack Section
@@ -41,7 +43,7 @@ const AboutPage = () => {
     setCopied(true);
     setTimeout(() => {
       setCopied(false);
-    }, 50000);
+    }, 2000);
     console.log(copied);
   }
 
@@ -56,7 +58,7 @@ const AboutPage = () => {
     if (violation) {
       window.scrollTo({
         top: violation.offsetTop,
-        behavior: "smooth"
+        behavior: 'smooth',
       });
     }
   }, [violation]);
@@ -69,6 +71,10 @@ const AboutPage = () => {
   
 
   return (
+    <>
+    <Helmet>
+    <meta name="description" content="Discover the story behind Paper Bottle, a unique blend of creativity and digital innovation by Ahreum. Explore Ahreum's journey, design philosophy, and the inspiration fueling their diverse digital projects, from web development to visual artistry." />
+  </Helmet>
     <main className="px-2 mt-4 max-w-[1000px] mx-auto"> 
       <h1 className='font-tektur mt-8 text-6xl sm:text-8xl font-bold'>Who I am</h1>
       <div className='font-vt323 px-4 text-sm mt-6 '>
@@ -93,6 +99,7 @@ const AboutPage = () => {
                   <button id={category}
                     className={`px-1 py-[4px] font-lato uppercase text-[16px] leading-3 text-slate-700 focus:text-p-color active:underline active:text-p-color  active:font-bold active:ring-slate-400 active:ring-1 active:ring-opacity-5 hover:text-zinc-500  transition ${currentCategory === category ? ' text-p-color text-[16px] font-bold underline underline-offset-2' : ''}`}
                     onClick={categoryHandler}
+                    aria-label={`Filter by ${category}`}
                   >
                     {category === 'development' ? 'development' : category === 'design' ? 'design' : category === 'all' ? 'all' : ''}
                   </button>
@@ -112,7 +119,7 @@ const AboutPage = () => {
             <div className='email-section flex gap-[6px]'>
               <p className='font-lato text-[18px]  font-bold uppercase '>Email</p>
               <a className=' text-[16px] font-lato leading-7 '><p>beautumn43@gmail.com</p></a>
-              <button class='copy-btn'><p className='font-vt323 text-[18px] -mt-[0.5px] border-[0.5px] bg-slate-200 rounded-lg px-1.5 leading-[26px] hover:bg-slate-200'
+              <button className='copy-btn' aria-label="Copy email address"><p className='font-vt323 text-[18px] -mt-[0.5px] border-[0.5px] bg-slate-200 rounded-lg px-1.5 leading-[26px] hover:bg-slate-200'
               onClick={copyEmail}> { copied ? 'copied!' : 'copy!'}</p></button>
             </div>
             <div className='social-links flex gap-3'>
@@ -138,6 +145,7 @@ const AboutPage = () => {
         <img className="mt-16 w-64 sm:w-96 justify-self-end"src="/images/three-bottles.png" alt="logo" ></img>
       </div>
     </main>
+    </>
   )
 }
 

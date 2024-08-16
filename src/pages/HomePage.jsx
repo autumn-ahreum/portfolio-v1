@@ -1,5 +1,4 @@
 import React, { useState , useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
 import { Helmet } from 'react-helmet';
 
@@ -9,11 +8,10 @@ const HomePage = () => {
     window.scrollTo(0, 0);
   },[])
   
-
   return (
     <>
       <Helmet>
-        <meta name="description" content="Explore Paper Bottle, the emerging front-end development and design brand by Ahreum Han. Discover recent web projects and design work showcasing growth and creativity in the field." />
+        <meta name="description" content="Explore to Paper Bottle, Ahreum Han's evolving front-end development and design brand. Discover a portfolio of innovative web projects and thoughtfully crafted designs that highlight a journey of continuous growth, creativity, and passion for the digital world." />
       </Helmet>
       <main className='px-4 mt-4 max-w-screen-xl mx-auto' id='home-header'> 
         <div className='here-section mt-10'>
