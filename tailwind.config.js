@@ -16,6 +16,7 @@ export default {
 
       animation: {
         'fade-up': 'fade-up 0.7s',
+        'buttonHover': 'buttonHover 0.3s ease-in-out',
       },
       keyframes: {
         'fade-up': {
@@ -28,7 +29,18 @@ export default {
             transform: 'translateY(0)',
           },
         },
-      },
+        'buttonHover': {
+          '0%' : {
+            backgroundColor: '#ffffff', 
+            transform: 'scale(1)', 
+          },
+          '100%' : {
+          backgroundColor: '#facc15', 
+          transform: 'scale(1.1)',
+          }
+        }
+      }, 
+      
 
      
       fontFamily: {

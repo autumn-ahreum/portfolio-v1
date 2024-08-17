@@ -17,6 +17,7 @@ const skillData = {
 };
 
 const AboutPage = () => {
+  const baseUrl = "https://ahreum.xyz";
 
   //In-page-nav section 
   const [ chosenSection, setChosenSection ] = useState('dev');
@@ -44,7 +45,6 @@ const AboutPage = () => {
     setTimeout(() => {
       setCopied(false);
     }, 2000);
-    console.log(copied);
   }
 
     useEffect(()=>{
@@ -53,6 +53,10 @@ const AboutPage = () => {
 
   //Page nav handle
   const [violation, setViolation] = useState(null);
+
+  const handleAnimationEnd = () => {
+    setTurnAnimate(false);
+  };
 
   useEffect(() => {
     if (violation) {
@@ -74,6 +78,11 @@ const AboutPage = () => {
     <>
     <Helmet>
     <meta name="description" content="Discover the story behind Paper Bottle, a unique blend of creativity and digital innovation by Ahreum. Explore Ahreum's journey, design philosophy, and the inspiration fueling their diverse digital projects, from web development to visual artistry." />
+    <meta property="og:title" content="About Me - Ahreum's Portfolio" />
+    <meta property="og:description" content="Learn more about Ahreum, a front-end web developer and UI designer from South Korea, currently based in Seattle, USA." />
+    <meta property="og:image" content={`${baseUrl}/images/logo.png`} />
+    <meta property="og:url" content={`${baseUrl}/about`} />
+    <meta property="og:type" content="website" />
   </Helmet>
     <main className="px-2 mt-4 max-w-[1000px] mx-auto"> 
       <h1 className='font-tektur mt-8 text-6xl sm:text-8xl font-bold'>Who I am</h1>
@@ -99,15 +108,14 @@ const AboutPage = () => {
                   <button id={category}
                     className={`px-1 py-[4px] font-lato uppercase text-[16px] leading-3 text-slate-700 focus:text-p-color active:underline active:text-p-color  active:font-bold active:ring-slate-400 active:ring-1 active:ring-opacity-5 hover:text-zinc-500  transition ${currentCategory === category ? ' text-p-color text-[16px] font-bold underline underline-offset-2' : ''}`}
                     onClick={categoryHandler}
-                    aria-label={`Filter by ${category}`}
                   >
                     {category === 'development' ? 'development' : category === 'design' ? 'design' : category === 'all' ? 'all' : ''}
                   </button>
                 </Link>
               ))}
             </div>
-            <div className='teches-container mx-[2px]'>
-              <ul className='flex flex-wrap gap-[6px] font-vt323 mt-2 text-[18px] font-light'>
+            <div className={`teches-container mx-[2px] ${turnAnimate ? 'animate-fade-up' : ''}`} onAnimationEnd={handleAnimationEnd}>
+            <ul className='flex flex-wrap gap-[6px] font-vt323 mt-2 text-[18px] font-light'>
                 { skillData[currentCategory].sort().map(skill => (
                   <li key={skill} className={`px-2 bg-p-color mx-[6px] ${ turnAnimate ? 'animate-fade-up' : ''}  animate-ease-in-out animate-normal text-white `}>{skill}</li>     
                   )) }
