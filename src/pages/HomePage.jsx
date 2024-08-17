@@ -11,6 +11,7 @@ const HomePage = () => {
   return (
     <>
       <Helmet>
+        <title>Ahreum Han- Front-End Developer</title>
         <meta name="description" content="Explore to Paper Bottle, Ahreum Han's evolving front-end development and design brand. Discover a portfolio of innovative web projects and thoughtfully crafted designs that highlight a journey of continuous growth, creativity, and passion for the digital world." />
       </Helmet>
       <main className='px-4 mt-4 max-w-screen-xl mx-auto' id='home-header'> 

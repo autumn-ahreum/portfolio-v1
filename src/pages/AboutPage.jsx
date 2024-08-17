@@ -77,13 +77,14 @@ const AboutPage = () => {
   return (
     <>
     <Helmet>
+    <title>About - Ahreum Han</title>
     <meta name="description" content="Discover the story behind Paper Bottle, a unique blend of creativity and digital innovation by Ahreum. Explore Ahreum's journey, design philosophy, and the inspiration fueling their diverse digital projects, from web development to visual artistry." />
     <meta property="og:title" content="About Me - Ahreum's Portfolio" />
     <meta property="og:description" content="Learn more about Ahreum, a front-end web developer and UI designer from South Korea, currently based in Seattle, USA." />
     <meta property="og:image" content={`${baseUrl}/images/logo.png`} />
     <meta property="og:url" content={`${baseUrl}/about`} />
     <meta property="og:type" content="website" />
-  </Helmet>
+    </Helmet>
     <main className="px-2 mt-4 max-w-[1000px] mx-auto"> 
       <h1 className='font-tektur mt-8 text-6xl sm:text-8xl font-bold'>Who I am</h1>
       <div className='font-vt323 px-4 text-sm mt-6 '>

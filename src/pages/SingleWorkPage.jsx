@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+
 
 // import SingleHero from '../components/sections/SingleHero';
 import { workItemsData } from '../workItemData';
@@ -28,7 +30,12 @@ const SingleWorkPage = () => {
   }, []);
 console.log("Current Work :", currentWork);
   return (
-    <main className={`${currentWork.slug}-single px-4 mt-4 max-w-screen-xl mx-auto`}>
+    <>
+      <Helmet>
+        <title> {currentWork.title}- Ahreum Han</title>
+        <meta name="description" content={`Discover details about ${currentWork.title} by Ahreum Han. Explore project insights, technologies used, and visual showcases, including live links and GitHub repositories.`} />
+      </Helmet>
+      <main className={`${currentWork.slug}-single px-4 mt-4 max-w-screen-xl mx-auto`}>
       {/* <SingleHero
         title={currentWork.title}
         overview={currentWork.overview}
@@ -124,7 +131,8 @@ console.log("Current Work :", currentWork);
         ))}
         </section>
       <Swiper currentWorkSlug={currentWork.slug} />
-    </main>
+      </main>
+    </>
   );
 }
 
