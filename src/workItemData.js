@@ -79,9 +79,9 @@ export const workItemsData =
       ]
     },
     {
-      "title": "Plans Can Change: A Design Tale",
+      "title": "Design Tale - Plans Can Change!",
       "content": [
-        { "type": "paragraph", "text": "In the development phase, as I started styling, I noticed a major flaw in my design - it wasn't drawing enough attention to the content. Movie posters are vibrant and informative, but the noisy white background was distracting. So, I quickly decided to simplify the design and switch back to a dark mode." },
+        { "type": "paragraph", "text": "In the development phase, as I started styling, I noticed a major flaw in my design - it wasn't drawing enough attention to the content. Movie posters are vibrant and informative, but the noisy white background was distracting. So, I quickly decided to simplify the design and switch back to dark mode." },
         { "type": "image", "file_path": "/movas-color-scheme.png" },
         { "type": "paragraph", "text": "The new design plan aimed to eliminate unnecessary text and design elements, focusing more on the movie content. I avoided using flashy design icons and aimed to allow users to focus more on the movie content, appealing to them as much as possible." },
         { "type": "video", "file_path": "/demo-movas-responsive.mp4" },
@@ -95,6 +95,13 @@ export const workItemsData =
         { "type": "video", "file_path": "/demo-movas-addtolist.mp4" },
         { "type": "paragraph", "text": "This Card component manages an 'Add to List' feature for movies. It toggles the state of addToList when the user clicks the add button, allowing them to add or remove movies from their list stored in local storage." },
         { "type": "codepen", "html": "<p class='codepen' data-height='300' data-default-tab='js' data-slug-hash='gOyNRJB' data-user='Autumn-the-reactor' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'><span>See the Pen <a href='https://codepen.io/Autumn-the-reactor/pen/gOyNRJB'>MDB movie card </a> by Autumn (<a href='https://codepen.io/Autumn-the-reactor'>@Autumn-the-reactor</a>) on <a href='https://codepen.io'>CodePen</a>.</span></p>" }
+      ]
+    },
+    {
+      "title": "Dynamic Movie Search Functionality",
+      "content": [
+        { "type": "paragraph", "text": "This search feature allows users to dynamically search for movies and view the results. It includes a debounced input to reduce the number of API calls, a loading indicator to enhance user experience, and pagination to manage large sets of search results. The integration with local storage ensures that movies previously added to a personal list are reflected accurately in the search results." },
+        { "type": "video", "file_path": "/demo-movas-search.mp4" },
       ]
     },
     {
