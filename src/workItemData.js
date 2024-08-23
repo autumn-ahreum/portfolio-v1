@@ -2,19 +2,19 @@ export const workItemsData =
 [
   {
     "title": "Portfolio v1 - Paper Bottle",
-    "sub_title": "Static JavaScript Tourism Webpage",
-    "slug": "jeju-island-tourism",
-    "brief_info": "Jeju Island is a popular destination for retreat and exploring its beautiful nature and this project is a responsive website about Jeju Island.",
-    "overview": "Jeju Island is a popular destination for retreat and exploring its beautiful nature. Jeju is located Southwest of the Korean Peninsula and is also well known as a beautiful volcanic island with triple Unesco World Heritage Sites. This website introduces the breathtaking beauty and history of Jeju Island. This was the first full responsive website project for the Front-end Web Development Program at BCIT.",
-    "techs": ["HTML", "CSS", "JavaScript", "Illustrator"],
+    "sub_title": "React Portfolio Site",
+    "slug": "paper-bottle",
+    "brief_info": "Paper Bottle is the brand representing my journey as a front-end developer, encapsulating my passion for web development and design.",
+    "overview": "Paper Bottle is more than just a portfolio; it's a reflection of my evolving skills and creativity in front-end development. Inspired by the idea of a beautifully packaged product that draws you in, Paper Bottle represents the same allure in digital form. This website introduces my journey, showcasing innovative web projects and carefully crafted designs that highlight my continuous growth and dedication to the digital world.",
+    "techs": ["React", "Tailwind CSS", "JavaScript", "GitHub", "Adobe XD", "Illustration", "Photoshop"],
     "thumb_images": ["thumb-jeju-1.jpg", "thumb-jeju-2.jpg"],
     "display_image": ["/display-jeju.jpg", "/display-jeju-medium.jpg", "/display-jeju-small.jpg"],
     "github_link": "https://github.com/autumn-ahreum/",
     "site_link": "https://www.ahreum.xyz/country-website/",
-    "project_duration": "2 weeks",
+    "project_duration": "4 weeks",
     "collaboration": "Solo",
     "roles": "Developer, UX/UI Designer",
-    "images_dir" : "/w-jeju",
+    "images_dir" : "/w-paperbottle",
     "sections": [
     {
       "title": "Plan",
