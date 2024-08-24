@@ -7,8 +7,8 @@ export const workItemsData =
     "brief_info": "Paper Bottle is the brand representing my journey as a front-end developer, encapsulating my passion for web development and design.",
     "overview": "Paper Bottle is more than just a portfolio; it's a reflection of my evolving skills and creativity in front-end development. Inspired by the idea of a beautifully packaged product that draws you in, Paper Bottle represents the same allure in digital form. This website introduces my journey, showcasing innovative web projects and carefully crafted designs that highlight my continuous growth and dedication to the digital world.",
     "techs": ["React", "Tailwind CSS", "JavaScript", "GitHub", "Adobe XD", "Illustration", "Photoshop"],
-    "thumb_images": ["thumb-jeju-1.jpg", "thumb-jeju-2.jpg"],
-    "display_image": ["/display-jeju.jpg", "/display-jeju-medium.jpg", "/display-jeju-small.jpg"],
+    "thumb_images": ["thumb-pb-1.png", "thumb-pb-2.png"],
+    "display_image": ["/display-pb.png", "/display-pb-medium.png", "/display-pb-small.png"],
     "github_link": "https://github.com/autumn-ahreum/",
     "site_link": "https://www.ahreum.xyz/country-website/",
     "project_duration": "4 weeks",
@@ -16,41 +16,40 @@ export const workItemsData =
     "roles": "Developer, UX/UI Designer",
     "images_dir" : "/w-paperbottle",
     "sections": [
-    {
-      "title": "Plan",
-      "content": [
-        { "type": "paragraph", "text": "I had to complete the project within the first month of attending the program, using pure HTML and JavaScript about the specific location or country. In the early stages, I drew inspiration from various travel and regional websites. I thought it is important to design the website and set its tone to reflect the characteristics of the region." },
-        { "type": "image", "file_path": "/jeju-colorscheme.png" },
-        { "type": "paragraph", "text": "Jeju Island, known for its beautiful mountains, trees, and sea, inspired me to choose a green tone that evokes a forest, aiming to capture the essence of such places." }
-      ]
-    },
-    {
-      "title": "Design",
-      "content": [
-        { "type": "image", "file_path": "/jeju-logo-design.png" },
-        { "type": "paragraph", "text": "I wanted to include an image of Jeju Island's iconic carved stone figure, the Stone Grandfather, in my logo. To create a logo and favicon, I designed a simple outline of the Stone Grandfather's face and features with shadows. My goal was to represent Jeju Island in a way that is both simple and meaningful, making it easily recognizable to those familiar with the island's culture." },
-        { "type": "paragraph", "text": "I aimed to create a layout that showcases the destination's attractions and scenery with large, high-quality images. In addition to the image slider on the homepage, I highlighted each page with a large image banner to create visual highlights." },
-        { "type": "image", "file_path": "/jeju-desktop-images.png" },
-        { "type": "paragraph", "text": "The layout includes a hero section at the top, featuring a captivating image, followed by sections highlighting various aspects of the destination such as attractions, activities, and more." },
-        { "type": "image", "file_path": "/jeju-mobile-images.png" },
-        { "type": "paragraph", "text": "The content is presented in a visually appealing manner, incorporating a mix of images, text, and sometimes videos or interactive elements to engage users and encourage them to explore further." }
-      ]
-    },
-    {
-      "title": "Development",
-      "content": [
-        { "type": "video", "file_path": "/jeju-demo.mp4" },
-        { "type": "paragraph", "text": "The slideshow displays a series of images, allowing users to move back and forth between them. Each image has a 'Read More' button that reveals additional text specific to that image when clicked. These features enhance the user experience by providing interactive content presentation." },
-        { "type": "codepen", "html": "<p class='codepen' data-height='300' data-theme-id='dark' data-default-tab='js' data-slug-hash='oNOrzzd' data-user='Autumn-the-reactor' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'><span>See the Pen <a href='https://codepen.io/Autumn-the-reactor/pen/oNOrzzd'>Untitled</a> by Autumn (<a href='https://codepen.io/Autumn-the-reactor'>@Autumn-the-reactor</a>) on <a href='https://codepen.io'>CodePen</a>.</span></p>" },
-        { "type": "paragraph", "text": "It includes functions to move to the next or previous slide plusSlides(n), or jump to a specific slide currentSlide(n), and to display the slides showSlides(n). With the 'Read More' button, users can toggle the display of additional text related to each slide. The myFunction(index) function controls this behavior, toggling the display of the 'Read More' button and the additional text for a specific slide when clicked." }
-      ]
-    },
-    {
-      "title": "Reflection",
-      "content": [
-        { "type": "paragraph", "text": "This is my first project creating a website with multiple pages and features. While the site is functional and accessible to most users, I realized it doesn't follow best practices, especially regarding photo optimization, after learning more about it. My main focus was to make users feel the charm of 'Jeju Island' by showcasing large photos so I could learn about how to arrange important content and what features to include to make it more efficient." }
-      ]
-    }
+      {
+        "title": "Concept",
+        "content": [
+          { "type": "paragraph", "text": "The concept behind Paper Bottle stems from the idea of creating digital content that is as enticing and appealing as a beautifully packaged product. I wanted my portfolio to reflect this concept by designing a website that not only showcases my work but also tells a story through its visuals and user experience." },
+          { "type": "image", "file_path": "/paperbottle-colorscheme.png" },
+          { "type": "paragraph", "text": "I chose a minimalist design with a clean, crisp aesthetic, using white space and subtle colors to mimic the look of premium packaging. The goal was to create a serene and inviting environment that draws users in and makes them want to explore more." }
+        ]
+      },
+      {
+        "title": "Design",
+        "content": [
+          { "type": "image", "file_path": "/paperbottle-logo-design.png" },
+          { "type": "paragraph", "text": "The logo and branding for Paper Bottle were inspired by the simplicity and elegance of well-designed packaging. I designed a logo that is clean and straightforward, yet memorable. The design process involved creating a visual identity that aligns with the overall theme of Paper Bottle—simple, refined, and captivating." },
+          { "type": "paragraph", "text": "The website layout was carefully crafted to ensure that the content is presented in a way that is both visually appealing and easy to navigate. Large, high-quality images are used to showcase my work, while subtle animations and transitions enhance the user experience without overwhelming it." },
+          { "type": "image", "file_path": "/paperbottle-desktop-images.png" },
+          { "type": "paragraph", "text": "The design is responsive, ensuring that it looks great on all devices. Whether viewed on a desktop, tablet, or smartphone, the website maintains its clean and elegant appearance, providing a seamless experience across different screen sizes." },
+          { "type": "image", "file_path": "/paperbottle-mobile-images.png" }
+        ]
+      },
+      {
+        "title": "Development",
+        "content": [
+          { "type": "video", "file_path": "/paperbottle-demo.mp4" },
+          { "type": "paragraph", "text": "The development process focused on creating a responsive and user-friendly website that not only showcases my portfolio but also embodies the brand identity of Paper Bottle. I used React and Tailwind CSS to build the site, ensuring that it is both performant and visually appealing." },
+          { "type": "codepen", "html": "<p class='codepen' data-height='300' data-theme-id='dark' data-default-tab='js' data-slug-hash='yLOrjVZ' data-user='Autumn-the-reactor' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'><span>See the Pen <a href='https://codepen.io/Autumn-the-reactor/pen/yLOrjVZ'>Paper Bottle UI Component</a> by Autumn (<a href='https://codepen.io/Autumn-the-reactor'>@Autumn-the-reactor</a>) on <a href='https://codepen.io'>CodePen</a>.</span></p>" },
+          { "type": "paragraph", "text": "I implemented various interactive features, such as a smooth scrolling effect and dynamic content loading, to enhance the overall user experience. The site is designed to be fast and responsive, with optimized images and code to ensure quick loading times." }
+        ]
+      },
+      {
+        "title": "Reflection",
+        "content": [
+          { "type": "paragraph", "text": "Creating Paper Bottle was a rewarding experience that allowed me to combine my skills in both design and development. It challenged me to think critically about how to present my work in a way that is both engaging and reflective of my brand. Through this project, I learned the importance of attention to detail and the impact that thoughtful design can have on the overall user experience." }
+        ]
+      }
   ]
   },
   {
