@@ -17,7 +17,7 @@ export const workItemsData =
     "images_dir" : "/w-paperbottle",
     "sections": [
       {
-        "title": "Concept",
+        "title": "Concept & Design",
         "content": [
           { "type": "paragraph", "text": "The concept behind Paper Bottle stems from the idea of creating digital content that is as enticing and appealing as a beautifully packaged product. I wanted my portfolio to reflect this concept by designing a website that not only showcases my work but also tells a story through its visuals and user experience." },
           { "type": "image", "file_path": "/paperbottle-colorscheme.png" },
