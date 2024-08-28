@@ -20,7 +20,7 @@ const HomePage = () => {
             <h3 className='font-tektur font-medium uppercase  text-3xl sm:text-4xl md:text-5xl'>Front-End Web Developer</h3>
             <h2 className='font-lato text-2xl sm:text-4xl md:5xl md:mt-2'>Ahreum Han</h2>
             <HashLink to="/about#paper-bottle-info"   spy={true} smooth={true} hashSpy={true}  offset={50} duration={500} delay={1000} isDynamic={true}>
-              <button className="mt-2 mr-2 relative md:w-40 md:h-12 z-[2] bg-[url('/images/btn-shape-1.svg')] bg-no-repeat bg-cover h-10 px-2 hover:bg-[url('/images/btn-shape-2.svg')]"><p className="text-s-color text-sm md:text-base font-lato cursor vertical mt-3">Why Paper Bottle?</p>
+              <button className="mt-2 mr-2 relative md:w-40 md:h-12 z-[2] bg-[url('/images/btn-shape-1.svg')] bg-no-repeat bg-cover h-10 px-2 hover:bg-[url('/images/btn-shape-2.svg')] cursor-pointer"><p className="text-s-color text-sm md:text-base font-lato cursor vertical mt-3">Why Paper Bottle?</p>
               </button>
             </HashLink>
           </div>

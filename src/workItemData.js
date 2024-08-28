@@ -17,10 +17,10 @@ export const workItemsData =
     "images_dir" : "/w-paperbottle",
     "sections": [
       {
-        "title": "Concept & Design",
+        "title": "Concept",
         "content": [
           { "type": "paragraph", "text": "The concept behind Paper Bottle stems from the idea of creating digital content that is as enticing and appealing as a beautifully packaged product. I wanted my portfolio to reflect this concept by designing a website that not only showcases my work but also tells a story through its visuals and user experience." },
-          { "type": "image", "file_path": "/paperbottle-colorscheme.png" },
+          { "type": "image", "file_path": "/pb-color-scheme.png" },
           { "type": "paragraph", "text": "I chose a minimalist design with a clean, crisp aesthetic, using white space and subtle colors to mimic the look of premium packaging. The goal was to create a serene and inviting environment that draws users in and makes them want to explore more." }
         ]
       },
@@ -30,7 +30,7 @@ export const workItemsData =
           { "type": "image", "file_path": "/paperbottle-logo-design.png" },
           { "type": "paragraph", "text": "The logo and branding for Paper Bottle were inspired by the simplicity and elegance of well-designed packaging. I designed a logo that is clean and straightforward, yet memorable. The design process involved creating a visual identity that aligns with the overall theme of Paper Bottle—simple, refined, and captivating." },
           { "type": "paragraph", "text": "The website layout was carefully crafted to ensure that the content is presented in a way that is both visually appealing and easy to navigate. Large, high-quality images are used to showcase my work, while subtle animations and transitions enhance the user experience without overwhelming it." },
-          { "type": "image", "file_path": "/paperbottle-desktop-images.png" },
+          { "type": "image", "file_path": "/pb-layout.png" },
           { "type": "paragraph", "text": "The design is responsive, ensuring that it looks great on all devices. Whether viewed on a desktop, tablet, or smartphone, the website maintains its clean and elegant appearance, providing a seamless experience across different screen sizes." },
           { "type": "image", "file_path": "/paperbottle-mobile-images.png" }
         ]
