@@ -27,8 +27,9 @@ export const workItemsData =
       {
         "title": "Design",
         "content": [
-          { "type": "image", "file_path": "/paperbottle-logo-design.png" },
+          { "type": "image", "file_path": "/pb-layout.png" },
           { "type": "paragraph", "text": "The logo and branding for Paper Bottle were inspired by the simplicity and elegance of well-designed packaging. I designed a logo that is clean and straightforward, yet memorable. The design process involved creating a visual identity that aligns with the overall theme of Paper Bottle—simple, refined, and captivating." },
+          { "type": "video", "file_path": "/pb-demo-littlethings.mp4" },
           { "type": "paragraph", "text": "The website layout was carefully crafted to ensure that the content is presented in a way that is both visually appealing and easy to navigate. Large, high-quality images are used to showcase my work, while subtle animations and transitions enhance the user experience without overwhelming it." },
           { "type": "image", "file_path": "/pb-layout.png" },
           { "type": "paragraph", "text": "The design is responsive, ensuring that it looks great on all devices. Whether viewed on a desktop, tablet, or smartphone, the website maintains its clean and elegant appearance, providing a seamless experience across different screen sizes." },
