@@ -15,10 +15,9 @@ const WorksPage = () => {
       <Helmet>
         <title> Works - Ahreum Han</title>
         <meta name="description" content="Explore the diverse range of projects by Ahreum Han on the Works page. Discover detailed descriptions, technologies used, and visual previews of each project, showcasing a journey of creativity and expertise in front-end development and design." />
-        {/* Add other meta tags here if needed */}
       </Helmet>
       <main className="px-4 mt-4 max-w-screen-xl mx-auto"> 
-        <h1 className='font-tektur mt-8 text-6xl sm:text-8xl font-bold'>Work</h1>
+        <h1 className='font-tektur mt-8 text-6xl sm:text-8xl font-bold'>Works</h1>
         { workItemsData.map((item, index) => (
           <WorkItem 
             key = {index}
