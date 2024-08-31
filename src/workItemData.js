@@ -38,12 +38,23 @@ export const workItemsData =
         ]
       },
       {
-        "title": "Development",
+        "title": "Project Data Rendering",
         "content": [
-          { "type": "video", "file_path": "/paperbottle-demo.mp4" },
-          { "type": "paragraph", "text": "The development process focused on creating a responsive and user-friendly website that not only showcases my portfolio but also embodies the brand identity of Paper Bottle. I used React and Tailwind CSS to build the site, ensuring that it is both performant and visually appealing." },
-          { "type": "codepen", "html": "<p class='codepen' data-height='300' data-theme-id='dark' data-default-tab='js' data-slug-hash='yLOrjVZ' data-user='Autumn-the-reactor' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'><span>See the Pen <a href='https://codepen.io/Autumn-the-reactor/pen/yLOrjVZ'>Paper Bottle UI Component</a> by Autumn (<a href='https://codepen.io/Autumn-the-reactor'>@Autumn-the-reactor</a>) on <a href='https://codepen.io'>CodePen</a>.</span></p>" },
-          { "type": "paragraph", "text": "I implemented various interactive features, such as a smooth scrolling effect and dynamic content loading, to enhance the overall user experience. The site is designed to be fast and responsive, with optimized images and code to ensure quick loading times." }
+          { "type": "paragraph",   "text": "Each project contains relevant details such as the title, brief information, overview, technology stack, images, videos, and more. The nested structure allows for a comprehensive breakdown of each project, with sections like \"Overview,\" \"Technologies Used,\" and \"Gallery\" being distinctly categorized under each project. The work list and detailed single work components render the data, ensuring that each section is presented clearly and effectively."
+          },
+          { "type": "codepen", "html": "<p class='codepen' data-height='300' data-theme-id='dark' data-default-tab='js' data-slug-hash='eYwLGaG' data-pen-title='Untitled' data-user='botone' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'><span>See the Pen <a href='https://codepen.io/botone/pen/eYwLGaG'>Untitled</a> by Ahreum (<a href='https://codepen.io/botone'>@botone</a>) on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"
+          },
+          { "type": "paragraph", "text": "This code renders project details by iterating over currentWork.sections and using a switch statement to conditionally render content based on its type (e.g., text, images, videos, CodePen embeds). Each section is displayed as an article, ensuring the project information is organized and clearly presented according to its content type." }
+        ]
+      },
+      {
+        "title": "Dev) Dynamic Skill Categories Display",
+        "content": [
+          { "type": "paragraph", "text": "The code efficiently manages and displays a list of skills categorized into 'development', 'design', and 'all'. It utilizes Object.keys to sort and generate category buttons that filter skills based on the chosen category. When a category button is clicked, the categoryHandler function updates the displayed skills accordingly. The teches-container section features an animation that applies a fade-up effect to the skills list whenever the category changes, ensuring a smooth visual transition." },
+          { "type": "video", "file_path": "/pb-demo-teches.mp4" },
+          { "type": "codepen", "html": "<p class='codepen' data-height='300' data-theme-id='dark' data-default-tab='js' data-slug-hash='eYwLGaG' data-pen-title='Untitled' data-user='botone' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'><span>See the Pen <a href='https://codepen.io/botone/pen/eYwLGaG'>Untitled</a> by Ahreum (<a href='https://codepen.io/botone'>@botone</a>) on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"
+
+          },
         ]
       },
       {
