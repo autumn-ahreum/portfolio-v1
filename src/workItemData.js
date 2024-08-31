@@ -17,22 +17,21 @@ export const workItemsData =
     "images_dir" : "/w-paperbottle",
     "sections": [
       {
-        "title": "Concept",
+        "title": "Concept and Inspiration",
         "content": [
           { "type": "image", "file_path": "/pb-color-scheme.png" },
           { "type": "paragraph", "text": "The logo and branding for Paper Bottle were inspired by the simplicity and elegance of well-designed packaging. I designed a logo that is clean and straightforward, yet memorable. The design process involved creating a visual identity that aligns with the overall theme of Paper Bottle—simple, refined, and captivating." },
         ]
       },
       {
-        "title": "Design",
+        "title": "Minimalist Design Aesthetic",
         "content": [
           { "type": "paragraph", "text": "I chose a minimalist design with a clean, crisp aesthetic, using white space and subtle colors to mimic the look of premium packaging. The goal was to create a serene and inviting environment that draws users in and makes them want to explore more." },
           { "type": "paragraph", "text": "The concept behind Paper Bottle stems from the idea of creating digital content that is as enticing and appealing as a beautifully packaged product. I wanted my portfolio to reflect this concept by designing a website that not only showcases my work but also tells a story through its visuals and user experience." },
           { "type": "image", "file_path": "/pb-layout.png" },
           { "type": "paragraph", "text": "The website layout was carefully crafted to ensure that the content is presented in a way that is both visually appealing and easy to navigate. Large, high-quality images are used to showcase my work, while subtle animations and transitions enhance the user experience without overwhelming it." },
           { "type": "video", "file_path": "/pb-demo-littlethings.mp4" },
-          { 
-            "type": "paragraph", 
+          { "type": "paragraph", 
             "text": "To add a playful touch to the minimalist design, I incorporated small interactive elements. For example, when users hover over or click on buttons, they create a wave-like effect that adds a fluid and dynamic feel. Additionally, I included a button that allows users to easily copy my email address with a single click, enhancing the site's usability while adding an element of delight to the user experience." 
           },
         ]
@@ -50,8 +49,8 @@ export const workItemsData =
       {
         "title": "Dev) Dynamic Skill Categories Display",
         "content": [
-          { "type": "paragraph", "text": "The code efficiently manages and displays a list of skills categorized into 'development', 'design', and 'all'. It utilizes Object.keys to sort and generate category buttons that filter skills based on the chosen category. When a category button is clicked, the categoryHandler function updates the displayed skills accordingly. The teches-container section features an animation that applies a fade-up effect to the skills list whenever the category changes, ensuring a smooth visual transition." },
           { "type": "video", "file_path": "/pb-demo-teches.mp4" },
+          { "type": "paragraph", "text": "The code efficiently manages and displays a list of skills categorized into 'development', 'design', and 'all'. It utilizes Object.keys to sort and generate category buttons that filter skills based on the chosen category. When a category button is clicked, the categoryHandler function updates the displayed skills accordingly. The teches-container section features an animation that applies a fade-up effect to the skills list whenever the category changes, ensuring a smooth visual transition." },
           { "type": "codepen", "html": "<p class='codepen' data-height='300' data-theme-id='dark' data-default-tab='js' data-slug-hash='eYwLGaG' data-pen-title='Untitled' data-user='botone' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'><span>See the Pen <a href='https://codepen.io/botone/pen/eYwLGaG'>Untitled</a> by Ahreum (<a href='https://codepen.io/botone'>@botone</a>) on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"
 
           },
@@ -60,7 +59,8 @@ export const workItemsData =
       {
         "title": "Reflection",
         "content": [
-          { "type": "paragraph", "text": "Creating Paper Bottle was a rewarding experience that allowed me to combine my skills in both design and development. It challenged me to think critically about how to present my work in a way that is both engaging and reflective of my brand. Through this project, I learned the importance of attention to detail and the impact that thoughtful design can have on the overall user experience." }
+          { "type": "paragraph",   "text": "Creating Paper Bottle was a rewarding experience that allowed me to combine my skills in both design and development. It challenged me to think critically about how to present my work in a way that is both engaging and reflective of my brand and it was a valuable opportunity to learn how to efficiently structure, manage, and render data without relying on a CMS, using a JSON file to maintain and render content. Through this project, I learned the importance of attention to detail and the impact that thoughtful design can have on the overall user experience."
+          }
         ]
       }
   ]
