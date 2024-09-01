@@ -111,6 +111,19 @@ console.log("Current Work :", currentWork);
                     return (
                       <div key={itemIndex} dangerouslySetInnerHTML={{ __html: item.html }}></div>
                     );
+                  case 'download':
+                    return (
+                      <a 
+                        key={itemIndex} 
+                        href={`/images${currentWork.images_dir}${item.download_link}`}
+                        download 
+                        className="download-link font-lato tracking-wide text-base sm:text-[20px] sm:leading-8 mt-4 font-bold italic underline bg-neutral-100 cursor-pointer focus:ring-2"
+                        aria-label={`Download ${item.link_text} file`}
+                        title={`Download ${item.link_text}`}
+                      >          
+                       {item.link_text}
+                      </a>
+                    )
                   default:
                     return null;
                 }
