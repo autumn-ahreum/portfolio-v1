@@ -90,9 +90,9 @@ const AboutPage = () => {
       <div className='font-vt323 px-4 text-sm mt-6 '>
         <p className='pb-1 text-xl'>Quick Menu - click! </p>
         <div className='in-page-nav font-vt323 text-base md:text-xl md:mb-8 flex gap-2'>
-            <button id="dev-info-btn" onClick={() => handleNavClick('dev-section')} className='cursor px-2 -py-1 border border-black border-dotted shadow-md	rounded-sm hover:text-yellow-300 hover:bg-blue-800  focus:text-yellow-200 focus:bg-blue-800'>DEV</button>
-            <button id="extra-info-btn" onClick={() => handleNavClick('extra-info-section')}className='cursor px-2 -py-1 border border-black border-dotted shadow-md	rounded-sm hover:text-yellow-300 hover:bg-blue-800 focus:text-yellow-300 focus:bg-blue-800'>!not.DEV</button>
-          <button id="paper-bottle-btn" onClick={() => handleNavClick('paper-bottle-info')}className='cursor px-2 -py-1 border border-black border-dotted shadow-md	rounded-sm hover:text-yellow-300 hover:bg-blue-700 focus:text-yellow-300 focus:bg-blue-800'>const paperBottle;</button>
+            <button id="dev-info-btn" onClick={() => handleNavClick('dev-section')} className='cursor px-2 -py-1 border border-black border-dotted shadow-md	rounded-sm hover:text-yellow-300 hover:bg-blue-800  focus:text-yellow-200 focus:bg-blue-800' aria-label="Navigate to Development Section">DEV</button>
+            <button id="extra-info-btn" onClick={() => handleNavClick('extra-info-section')}className='cursor px-2 -py-1 border border-black border-dotted shadow-md	rounded-sm hover:text-yellow-300 hover:bg-blue-800 focus:text-yellow-300 focus:bg-blue-800' aria-label="Navigate to Extra Information Section">!not.DEV</button>
+          <button id="paper-bottle-btn" onClick={() => handleNavClick('paper-bottle-info')}className='cursor px-2 -py-1 border border-black border-dotted shadow-md	rounded-sm hover:text-yellow-300 hover:bg-blue-700 focus:text-yellow-300 focus:bg-blue-800' aria-label="Navigate to Paper Bottle Section">const paperBottle;</button>
         </div>
       </div>
       <div className='dev-section mt-3' id="dev-section">
@@ -132,8 +132,8 @@ const AboutPage = () => {
               onClick={copyEmail}> { copied ? 'copied!' : 'copy!'}</p></button>
             </div>
             <div className='social-links flex gap-3'>
-              <Link to='https://www.linkedin.com/in/devahreum' className='relative ml-3 mt-2 inline-block before:absolute before:-left-2 before:bg-p-color before:h-[22px] before:mt-[3px] before:w-1.5'><p className='font-lato font-bold text-xl ml-[2px]'>LinkdIn</p></Link>
-              <Link to='https://github.com/autumn-ahreum'className='relative ml-3 mt-2 inline-block before:absolute before:-left-2 before:bg-p-color before:h-[22px] before:mt-[3px] before:w-1.5'><p className='font-lato font-bold text-xl ml-[2px]'>GitHub</p></Link>
+              <Link to='https://www.linkedin.com/in/devahreum' className='relative ml-3 mt-2 inline-block before:absolute before:-left-2 before:bg-p-color before:h-[22px] before:mt-[3px] before:w-1.5' target='_blank' rel='noopener noreferrer' ><p className='font-lato font-bold text-xl ml-[2px]'>LinkdIn</p></Link>
+              <Link to='https://github.com/autumn-ahreum'className='relative ml-3 mt-2 inline-block before:absolute before:-left-2 before:bg-p-color before:h-[22px] before:mt-[3px] before:w-1.5' target='_blank' rel='noopener noreferrer'><p className='font-lato font-bold text-xl ml-[2px]'>GitHub</p></Link>
             </div>
           </div>
         </aside>
@@ -151,7 +151,7 @@ const AboutPage = () => {
       <div className='pb-info px-4 w-full grid grid-cols-1' >
         <h2 className='font-tektur tracking-tight text-[42px] sm:text-6xl font-bold'>Why Paper Bottle?</h2>
         <p className='font-lato font-light tracking-wide text-[15px] leading-6 sm:text-[18px] sm:leading-[30px] mt-4'>Do you remember ever seeing something that immediately made you want to purchase it, making you curious about what’s inside? For me, I’ve always had a particular impulse, especially when I see well-packaged paper bottles. Whether it’s sweet strawberry milk or smooth almond milk inside, I can’t help but be drawn in by that shiny packaging and crisp white design. Makes you think it’s not just good for the environment but also better for you, right? So, if I were to craft and share content, I’d want it to be like that beautifully packaged paper bottle—something you can’t resist but want to dive into. I want my digital content to be that go-to spot someone opens up and just wants to stick around.</p> 
-        <img className="mt-16 w-64 sm:w-96 justify-self-end"src="/images/three-bottles.png" alt="logo" ></img>
+        <img className="mt-16 w-64 sm:w-96 justify-self-end"src="/images/three-bottles.png" alt="Three paper bottles with a minimalist design" ></img>
       </div>
     </main>
     </>

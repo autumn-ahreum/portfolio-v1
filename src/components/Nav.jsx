@@ -32,7 +32,7 @@ const Nav = ( { opened, toggleMenu } ) => {
             <li className="p-3.5 text-s-color">
             <NavLink to="/works" className="nav-link group relative ">
                 <p className="group-hover:text-white hover:text-[2rem]  hover:transition-all ">
-                  <span className="opacity-0 group-hover:opacity-100 absolute  -left-6">◦</span>Work
+                  <span className="opacity-0 group-hover:opacity-100 absolute  -left-6">◦</span>Works
                 </p>
             </NavLink> 
             </li>          
