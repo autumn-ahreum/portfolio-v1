@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="right-container flex space-x-4 sm:gap-4">
           <HashLink to="/"><p>Home</p></HashLink>
           <HashLink to="/about" ><p>About</p></HashLink>
-          <HashLink to="/works"><p>Work</p></HashLink>
+          <HashLink to="/works"><p>Works</p></HashLink>
         </div>
       </div>
       <div className="links-menu text-3xl pt-4 uppercase mt-8  max-w-screen-lg mx-auto sm:text-[42px] md:flex md:gap-10 md:ml-10 md:mt-6 lg:ml-20">
@@ -23,7 +23,7 @@ const Footer = () => {
       </div>
       <div className="footer-logo-section text-right flex flex-col mt-8 max-w-screen-lg mx-auto md:mr-10 md:my-10 lg:mr-20 lg:my-20">
         <Link to="/"><img src="/images/logo-w.png" alt="Logo" className= "max-w-28 sm:max-w-32 md:max-w-40 self-end inline-block"/></Link>
-        <p className='text-xs md:text-base bottom-0 -mt-2'>&copy; 2024 Ahreum Han All Rights Reserved</p>
+        <p className='text-xs md:text-base bottom-0 -mt-2'>&copy; 2025 Ahreum Han All Rights Reserved</p>
       </div>
     </footer>
   )

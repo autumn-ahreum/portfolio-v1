@@ -15,7 +15,7 @@ import NotFoundPage from "../pages/NotFoundPage";
 const AppRouter = () => {
 
   return ( 
-    <BrowserRouter>
+    <BrowserRouter basename="/">
         <Header />
         <Routes>
             <Route path="/" element={<HomePage />}/>

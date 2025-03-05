@@ -1,12 +1,21 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 
+
 const NotFoundPage = () => {
-  
+
   useEffect(() => {
+
+    const path = window.location.pathname;
+
+    const subProjects = ["/movas/", "/country-website/"];  
+
+    if (subProjects.some((p) => path.startsWith(p))) {
+      window.location.replace(path);  
+    }
     window.scrollTo(0, 0);
   }, []);
-  
+
   return (
     <>
       <Helmet>

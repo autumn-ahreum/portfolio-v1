@@ -140,7 +140,7 @@ const AboutPage = () => {
       </div>
       <div className='extra-info-section px-4 mt-12 md:w-2/3 block' id="extra-info-section">
         <h2 className='font-tektur tracking-tight text-[42px] sm:text-[46px] font-bold'>Extra! Extra!</h2>
-        <p className='font-lato font-light tracking-wide text-[15px] leading-6 sm:text-[18px] sm:leading-7 mt-4'>My first job was as a server at a Korean Spy Rice Cake Bistro 🍴 to save money for buying a camera when I was in middle school. (Somehow my favorite Korean food is spicy rice cake 🌶️🥵.)</p>
+        <p className='font-lato font-light tracking-wide text-[15px] leading-6 sm:text-[18px] sm:leading-7 mt-4'>My first job was as a server at a Korean Spicy Rice Cake Bistro 🍴 to save money for buying a camera when I was in middle school. (Somehow my favorite Korean food is spicy rice cake 🌶️🥵.)</p>
         <p className='font-lato font-light tracking-wide text-[15px] leading-6 sm:text-[18px] sm:leading-7 mt-4'>Before working as a broadcast writer, I worked various part-time jobs, such as filming and editing classroom videos 📹, working as a barista ☕, and shooting weddings 💒, while attending school.</p>
         <p className='font-lato font-light tracking-wide text-[15px] leading-6 sm:text-[18px] sm:leading-7 mt-4'>My favorite exercise is running 🏃‍♀️, and my favorite moment is hitting the sauna after a workout 🧖‍♀️.</p>
         <p className='font-lato font-light tracking-wide text-[15px] leading-6 sm:text-[18px] sm:leading-7 mt-4'>My most valued virtue is 仁 (Ren), which means showing kindness and empathy in how we relate to others. It's like a universal ethic that transcends specific relationships, reminding us to always be kind, even in small things. 💖</p>        
