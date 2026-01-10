@@ -23,7 +23,7 @@ const Footer = () => {
       </div>
       <div className="footer-logo-section text-right flex flex-col mt-8 max-w-screen-lg mx-auto md:mr-10 md:my-10 lg:mr-20 lg:my-20">
         <Link to="/"><img src="/images/logo-w.png" alt="Logo" className= "max-w-28 sm:max-w-32 md:max-w-40 self-end inline-block"/></Link>
-        <p className='text-xs md:text-base bottom-0 -mt-2'>&copy; 2025 Ahreum Han All Rights Reserved</p>
+        <p className='text-xs md:text-base bottom-0 -mt-2'>&copy; 2026 Ahreum Han All Rights Reserved</p>
       </div>
     </footer>
   )
