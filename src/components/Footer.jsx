@@ -16,12 +16,12 @@ const Footer = () => {
           <HashLink to="/works"><p>Works</p></HashLink>
         </div>
       </div>
-      <div className="links-menu text-3xl pt-4 uppercase mt-8  max-w-screen-lg mx-auto sm:text-[42px] md:flex md:gap-10 md:ml-10 md:mt-6 lg:ml-20">
-          <HashLink to='https://www.linkedin.com/in/devahreum/'><p className="pt-3 mt-5 sm:pt-6 md:pt-12">Linkedin</p></HashLink>
-          <HashLink to='https://github.com/autumn-ahreum/'><p className="pt-3 mt-5 sm:pt-6 md:pt-12">GitHub</p></HashLink>
-          <HashLink to='mailto:beautumn43@gmail.com'><p className="pt-3 mt-5 sm:pt-6 md:pt-12">Email</p></HashLink>
+      <div className="links-menu text-3xl pt-4 uppercase mt-8 md:max-w-[1920px] mx-auto sm:text-[42px]  md:gap-10 ">
+          <HashLink to='https://www.linkedin.com/in/devahreum/'><p className="pt-3 mt-5 ml-1 sm:pt-6 md:pt-12">Linkedin</p></HashLink>
+          <HashLink to='https://github.com/autumn-ahreum/'><p className="pt-3 mt-5 sm:pt-6 ml-1 md:pt-12">GitHub</p></HashLink>
+          <HashLink to='mailto:beautumn43@gmail.com'><p className="pt-3 mt-5 sm:pt-6 ml-1 md:pt-12">Email</p></HashLink>
       </div>
-      <div className="footer-logo-section text-right flex flex-col mt-8 max-w-screen-lg mx-auto md:mr-10 md:my-10 lg:mr-20 lg:my-20">
+      <div className="footer-logo-section text-right flex flex-col mt-8 max-w-[1920px] mr-2 mx-auto md:my-10  lg:my-20">
         <Link to="/"><img src="/images/logo-w.png" alt="Logo" className= "max-w-28 sm:max-w-32 md:max-w-40 self-end inline-block"/></Link>
         <p className='text-xs md:text-base bottom-0 -mt-2'>&copy; 2026 Ahreum Han All Rights Reserved</p>
       </div>

@@ -11,14 +11,14 @@ const HomePage = () => {
   return (
     <>
       <Helmet>
-        <title>Ahreum Han- Front-End Developer</title>
+        <title>Ahreum Han- Design Engineer</title>
         <meta name="description" content="Explore to Paper Bottle, Ahreum Han's evolving front-end development and design brand. Discover a portfolio of innovative web projects and thoughtfully crafted designs that highlight a journey of continuous growth, creativity, and passion for the digital world." />
       </Helmet>
       <main className='px-4 mt-4 max-w-screen-xl mx-auto' id='home-header'> 
         <div className='here-section mt-10'>
           <div className="banner-intro flex flex-col align-end text-right">
-            <h3 className='font-tektur font-medium uppercase  text-3xl sm:text-4xl md:text-5xl'>Front-End Web Developer</h3>
-            <h2 className='font-lato text-2xl sm:text-4xl md:5xl md:mt-2'>Ahreum Han</h2>
+            <h3 className='font-tektur font-medium uppercase  text-3xl sm:text-4xl md:text-5xl leading-[1.3em]'>Designing what you see, <br/>Coding how it works.</h3>
+            {/* <h2 className='font-lato text-2xl sm:text-4xl md:5xl md:mt-2 '>Designing what you see, <br/>Coding how it works.</h2> */}
             <HashLink to="/about#paper-bottle-info"   spy={true} smooth={true} hashSpy={true}  offset={50} duration={500} delay={1000} isDynamic={true}>
               <button 
                 className="mt-2 mr-2 relative md:w-40 md:h-12 z-[2] bg-[url('/images/btn-shape-1.svg')] bg-no-repeat bg-cover h-10 px-2 hover:bg-[url('/images/btn-shape-2.svg')] cursor-pointer"

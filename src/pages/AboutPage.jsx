@@ -7,7 +7,7 @@ import { Helmet } from 'react-helmet';
 
 // Stack Section
 const developmentSkills = ['JavaScript', 'HTML', 'CSS', 'SASS', 'jQuery', 'PHP', 'ReactJS', 'WordPress', 'Gulp', 'Git', 'RestAPI', 'Shopify', 'WooCommerce', 'SQL', 'Tailwind'];
-const designSkills = ['Figma', 'Adobe XD', 'Photoshop', 'Illustrator', 'UI/UX design'];
+const designSkills = ['Figma', 'Adobe XD', 'Photoshop', 'Illustrator', 'UI/UX design', 'Brand Identity', 'UI/UX Strategy', 'Visual Storytelling'];
 const emailText = 'beautumn43@gmail.com';
 
 const skillData = {
@@ -97,8 +97,13 @@ const AboutPage = () => {
       </div>
       <div className='dev-section mt-3' id="dev-section">
         <div className='left-content mb-8 px-4 md:w-[70%] md:float-left'>
-          <h2 className='font-tektur tracking-tight text-[22px] sm:text-[28px] font-bold'>I’m Ahreum. A designer, developer and problem solver.</h2>
-          <p className='font-lato font-light tracking-wide text-[15px] leading-6 sm:text-[18px] sm:leading-7 mt-4'>Hello, I am a front-end web developer and UI designer originally from South Korea, currently based in Vancouver, Canada. When assigned a task, I approach it with passion. I believe that passion and empathy are the most crucial virtues in web development. Studying the most effective user-centric UI while ensuring it is aesthetically pleasing is both the most challenging task and a topic that piques my curiosity.<br /><br />Before diving into web development, I worked as a documentary broadcaster for eight years in South Korea. As I delved deeper into web development, I realized that there are many similarities between my previous role as a broadcaster and what I do now. One key similarity is always considering how to make information easily understandable from the viewer’s perspective and figuring out ways to deliver it engagingly. The experience I gained from that work significantly relates to and benefits my career in web development.</p>
+          <h2 className='font-tektur tracking-tight text-[22px] sm:text-[28px] font-bold'>const <span className='text-[26px] sm:text-[32px]' >Ahreum</span> = Dev && !not.Dev;</h2>
+          <img
+            className='my-0 w-72 p-1 opacity-85 rounded-2xl'
+            src="/images/ah.png"  
+            alt="Ahreum Image"
+          />
+          <p className='font-lato font-light tracking-wide text-[15px] leading-6 sm:text-[18px] sm:leading-7 mt-4'>I’m Ahreum. A Design Engineer bridging the gap between aesthetic branding and functional code. I believe that visual beauty truly shines when it translates into seamless usability. My journey as a creator is not limited to a single role; I build brand identities that resonate, design intuitive UI/UX flows that guide users, and transform those visions into high-performance reality through frontend development. I strive to create digital products that are not only pixel-perfect but also robust and user-centered at their core.<br /><br />Before transitioning into the tech industry, I spent nearly a decade as a documentary broadcaster, mastering the art of audience-focused communication. This experience serves as the foundation of my work as a Design Engineer. Just as a documentary requires a clear flow and engaging delivery to keep viewers tuned in, a digital product requires seamless UX and robust performance. I leverage my deep understanding of human perspective to bridge the gap between complex backend logic and user-friendly frontend experiences.</p>
         </div>
         <aside className='right-section max-w-[400px] md:w-[30%] px-4 md:float-right '>
           <div className='stack-section '>
@@ -139,13 +144,11 @@ const AboutPage = () => {
         </aside>
       </div>
       <div className='extra-info-section px-4 mt-12 md:w-2/3 block' id="extra-info-section">
-        <h2 className='font-tektur tracking-tight text-[42px] sm:text-[46px] font-bold'>Extra! Extra!</h2>
-        <p className='font-lato font-light tracking-wide text-[15px] leading-6 sm:text-[18px] sm:leading-7 mt-4'>My first job was as a server at a Korean Spicy Rice Cake Bistro 🍴 to save money for buying a camera when I was in middle school. (Somehow my favorite Korean food is spicy rice cake 🌶️🥵.)</p>
-        <p className='font-lato font-light tracking-wide text-[15px] leading-6 sm:text-[18px] sm:leading-7 mt-4'>Before working as a broadcast writer, I worked various part-time jobs, such as filming and editing classroom videos 📹, working as a barista ☕, and shooting weddings 💒, while attending school.</p>
-        <p className='font-lato font-light tracking-wide text-[15px] leading-6 sm:text-[18px] sm:leading-7 mt-4'>My favorite exercise is running 🏃‍♀️, and my favorite moment is hitting the sauna after a workout 🧖‍♀️.</p>
-        <p className='font-lato font-light tracking-wide text-[15px] leading-6 sm:text-[18px] sm:leading-7 mt-4'>My most valued virtue is 仁 (Ren), which means showing kindness and empathy in how we relate to others. It's like a universal ethic that transcends specific relationships, reminding us to always be kind, even in small things. 💖</p>        
-        <p className='font-lato font-light tracking-wide text-[15px] leading-6 sm:text-[18px] sm:leading-7 mt-4'>I often take photos from my perspective 📸, but sometimes people don't understand the story behind those pictures.</p>
-        <p className='font-lato font-light tracking-wide text-[15px] leading-6 sm:text-[18px] sm:leading-7 mt-4'>I love being in nature 🏕️, especially camping and hiking in the mountains 🏔️; it's my ultimate relaxation.</p>
+        <h2 className='font-tektur tracking-tight text-[42px] sm:text-[46px] font-bold'>Beyond the Code!</h2>
+        <p className='font-lato font-light tracking-wide text-[15px] leading-6 sm:text-[18px] sm:leading-7 mt-4'><span className="font-bold block mb-2"> The Hustle & The Lens </span> My journey began in middle school, working at a local bistro to save up for my first camera. That early drive for visual storytelling led me through various roles—from filming classroom lectures to capturing the raw emotions of weddings. These experiences taught me how to observe the world through a lens, a skill that now defines my attention to detail in UI/UX design.</p>
+        <p className='font-lato font-light tracking-wide text-[15px] leading-6 sm:text-[18px] sm:leading-7 mt-4'><span className="font-bold block mb-2"> The Philosophy of 仁 (Ren)</span> At the core of my work is the virtue of 仁 (Ren)—the practice of deep empathy and kindness toward others. I believe technology should be inherently human. For me, UX design is not just about pixels; it’s about practicing Ren by creating interfaces that truly understand and respect the user’s perspective.</p>
+        <p className='font-lato font-light tracking-wide text-[15px] leading-6 sm:text-[18px] sm:leading-7 mt-4'> </p>
+        <p className='font-lato font-light tracking-wide text-[15px] leading-6 sm:text-[18px] sm:leading-7 mt-4'><span className="font-bold block mb-2"> Recharging in Nature</span> When I’m not building digital products, you’ll find me running, camping, or hiking through the mountains. I find my ultimate clarity in nature and the rewarding heat of a sauna after a long run. These moments of physical challenge and quiet reflection keep my creativity grounded and my perspective fresh.</p>        
       </div>
       <div id='paper-bottle-info' className='h-16' ></div>
       <div className='pb-info px-4 w-full grid grid-cols-1' >

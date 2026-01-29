@@ -11,7 +11,7 @@ export default ({ currentWorkSlug }) => {
   const filteredItems = workItemsData.filter(item => item.slug !== currentWorkSlug);
 
   return (
-    <section className='other-work-cta w-11/12 mx-auto mt-4 md:flex md:gap-6 md:justify-start md:mt-20 md:min-h-[440px]'>
+    <section className='other-work-cta w-11/12 mx-auto mt-4 md:flex md:gap-6 md:justify-start md:mt-20 md:min-h-[440px] overflow-hidden'>
       <div>
         <h2 className='font-tektur text-[30px] sm:text-[36px] max-w-[360px] md:text-6xl'>
           Check Out More Work!
