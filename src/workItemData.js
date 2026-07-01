@@ -1,6 +1,78 @@
 export const workItemsData = 
 [
   {
+    "title": "The Sentinel by Yuvoice",
+    "sub_title": "Brand Identity & UX/UI Redesign",
+    "slug": "sentinel",
+    "brief_info": "Redesigned the visual identity and user experience of a nonprofit citizen journalism platform, including logo design, editorial UI system, reusable templates, and brand guidelines to create a more cohesive and scalable publishing experience.",
+    "overview": "The Sentinel by Yuvoice is a multi-format publishing platform that includes journalism and editorial content such as breaking news, lifestyle, business articles, and poetry, alongside curated seasonal and thematic series.",
+    "techs": ["UI/UX Design", "Web Experience","Branding", " Editorial UI", "Design System","Figma", "Adobe XD", "Illustrator", "Photoshop"],
+    "thumb_images": ["thumb-sentinel-1(final).png", "thumb-sentinel-2(final).png"],
+    "display_image": ["/display-sentinel.jpg", "/display-sentinel-medium.jpg", "/display-sentinel-small.jpg"],
+    "site_link": "https://sentinel.yuvoice.org/",
+    "case_study_id" : "case-study",
+    "project_duration": "4 weeks",
+    "collaboration": "Collaboration",
+    "roles": "UX/UI Designer, Brand Designer",
+    "images_dir" : "/w-sentinel",
+    "sections": [
+      {
+        "title": "The Problem",
+        "content": [
+          { "type": "paragraph", "text": "While this diversity reflects the platform’s mission, it created challenges in maintaining a consistent and scalable reading experience. The Sentinel is a digital publishing platform that delivers in-depth stories across diverse topics. The experience is designed to serve both readers and contributors through a cohesive editorial ecosystem." },
+          { "type": "paragraph", "text": "1. Limited differentiation between content types resulted in a uniform layout and unclear reading hierarchy despite high content complexity." },
+          { "type": "paragraph", "text": "2. Lack of a scalable design system to support diverse editorial formats and reusable content structures." },
+          { "type": "paragraph", "text": "3. The landing page lacked clear content prioritization, making it difficult to surface diverse content categories and navigate by user intent." },
+          { "type": "paragraph", "text": "4. The contributor and volunteer publishing framework was limited, leading to variation in how content was structured and presented." }
+        ]
+      },
+      {
+        "title": "UX Approach",
+        "content": [
+          { "type": "paragraph", "text": "The design process was iterative and implementation-driven, closely aligned with editorial and technical constraints in collaboration with the CTO, Rachelle Trotman followed a linear UX research process, and design decisions were made directly through exploration of content structure and publishing workflows." },
+          { "type": "image", "file_path": "/sentinel-platform-overview.png" },
+
+        ]
+      },
+      {
+        "title": "Brand identity",
+        "content": [
+          { "type": "paragraph",   "text": "The new identity was designed to reflect The Sentinel’s mission of amplifying diverse human voices through journalism and storytelling. I focused on creating a balance between editorial credibility and expressive openness, supporting a wide range of content from news to personal narratives and creative writing." },
+          { "type": "image", "file_path": "/sentinel-logos.png" },
+          { "type": "paragraph", "text": "1. Logo exploration focused on clarity, adaptability, and editorial trust." },
+          { "type": "paragraph", "text": "2. A typography system designed for readability across long-form content." },
+          { "type": "paragraph", "text": "3. Color system structured to differentiate content types while maintaining cohesion." },
+          { "type": "paragraph", "text": "4. Editorial tone refined to feel inclusive, human-centered, and neutral." },
+          { "type": "paragraph", "text": "5. Accessibility considerations prioritized across reading experiences logo exploration typography selection color system editorial tone accessibility/readability." },
+        ]
+      },
+      {
+        "title": "Desing System",
+        "content": [
+          { "type": "paragraph", "text": "A scalable design system was created to support consistency across contributor-generated content, editorial series, and category-based storytelling formats.The system balances flexibility for creative expression with structural consistency across the platform." },
+          { "type": "image", "file_path": "/sentinel-category-system.png" },
+          { "type": "image", "file_path": "/sentinel-series.png" },
+        ]
+      },
+      {
+        "title": "UX Decisions",
+        "content": [
+          { "type": "paragraph",   "text": "UX decisions were guided by the need to support diverse content types and reading contexts within a unified platform experience."},
+          { "type": "image", "file_path": "/sentinel-landing-1.png" },
+          { "type": "image", "file_path": "/sentinel-landing-2.png" },
+        ]
+      },
+      {
+        "title": "Final Screens",
+        "content": [
+          { "type": "paragraph",   "text": "The final design system was applied across key touchpoints of the platform, including landing, category, and article experiences.Each interface was designed to reflect its content type while maintaining a consistent underlying system"},
+          { "type": "image", "file_path": "/sentinel-before-and-after.png" },
+          { "type": "image", "file_path": "/sentinel-submission-flow.png" },
+        ]
+      },
+  ]
+  },
+  {
     "title": "Portfolio v1 - Paper Bottle",
     "sub_title": "React Portfolio Site",
     "slug": "paper-bottle",

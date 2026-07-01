@@ -52,13 +52,49 @@ console.log("Current Work :", currentWork);
               alt={`${currentWork.title} Display Image`}
             />
             <div className='btn-container flex w-full gap-2 justify-end mt-4'>
+  <Link to={currentWork.site_link}>
+    <button className='mt-2 mr-1 bg-[url("/images/btn-shape-1.svg")] bg-no-repeat bg-cover w-32 h-9 sm:w-40 sm:h-12 px-2 hover:bg-[url("/images/btn-shape-2.svg")]'>
+      <p className='text-s-color text-sm sm:text-base font-lato cursor vertical mt-3'>
+        Live Website
+      </p>
+    </button>
+  </Link>
+
+  {currentWork.github_link ? (
+    <Link to={currentWork.github_link}>
+      <button className='mt-2 mr-1 bg-[url("/images/btn-shape-1.svg")] bg-no-repeat bg-cover w-32 h-9 sm:w-40 sm:h-12 px-2 hover:bg-[url("/images/btn-shape-2.svg")]'>
+        <p className='text-s-color text-sm sm:text-base font-lato cursor vertical mt-3'>
+          Git Hub
+        </p>
+      </button>
+    </Link>
+  ) : currentWork.case_study_id ? (
+    <button
+      type="button"
+      onClick={() => {
+        document
+          .getElementById(currentWork.case_study_id)
+          ?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+      }}
+      className='mt-2 mr-1 bg-[url("/images/btn-shape-1.svg")] bg-no-repeat bg-cover w-32 h-9 sm:w-40 sm:h-12 px-2 hover:bg-[url("/images/btn-shape-2.svg")]'
+    >
+      <p className='text-s-color text-sm sm:text-base font-lato cursor vertical mt-3'>
+        View Case Study
+      </p>
+    </button>
+  ) : null}
+</div>
+            {/* <div className='btn-container flex w-full gap-2 justify-end mt-4'>
               <Link to={currentWork.site_link} className=''> 
                   <button className='mt-2 mr-1  bg-[url("/images/btn-shape-1.svg")] bg-no-repeat bg-cover w-32 h-9 sm:w-40 sm:h-12 px-2 hover:bg-[url("/images/btn-shape-2.svg")]'><p className='text-s-color text-sm sm:text-base font-lato cursor vertical mt-3'>Live Website</p></button>
               </Link>  
               <Link to={currentWork.github_link} className=''> 
                   <button className='mt-2 mr-1  bg-[url("/images/btn-shape-1.svg")] bg-no-repeat bg-cover w-32 h-9 sm:w-40 sm:h-12 px-2 hover:bg-[url("/images/btn-shape-2.svg")]'><p className='text-s-color text-sm sm:text-base font-lato cursor vertical mt-3'>Git Hub</p></button>
               </Link>  
-            </div>
+            </div> */}
             {currentWork.techs.length > 0 && ( 
               <ul className='techs pl-1 mt-6 flex flex-wrap gap-1 font-lato text-[18px]'>
                   {currentWork.techs.map((tech, index) => (
@@ -77,7 +113,9 @@ console.log("Current Work :", currentWork);
           </div>
         </section> 
       {/*=====Single Hero Ends=====*/}
-      <section className='detail-content-wrapper w-11/12 mx-auto'>
+      <section 
+        id="case-study" 
+        className='detail-content-wrapper w-11/12 mx-auto'>
       {currentWork.sections.map((section, index) => (
         <article key={index} className={`${section.title.toLowerCase()}-section mb-8`}>
           <h2 className='font-tektur text-[33px] sm:text-[42px]'>{`- ${section.title}`}</h2>

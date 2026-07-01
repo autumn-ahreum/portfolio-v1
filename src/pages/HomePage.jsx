@@ -17,7 +17,7 @@ const HomePage = () => {
       <main className='px-4 mt-4 max-w-screen-xl mx-auto' id='home-header'> 
         <div className='here-section mt-10'>
           <div className="banner-intro flex flex-col align-end text-right">
-            <h3 className='font-tektur font-medium uppercase  text-3xl sm:text-4xl md:text-5xl leading-[1.3em]'>Designing what you see, <br/>Coding how it works.</h3>
+            <h3 className='font-tektur font-medium uppercase  text-3xl sm:text-4xl md:text-5xl leading-[1.3em]'> Product Designer<br />creating thoughtful experiences</h3>
             {/* <h2 className='font-lato text-2xl sm:text-4xl md:5xl md:mt-2 '>Designing what you see, <br/>Coding how it works.</h2> */}
             <HashLink to="/about#paper-bottle-info"   spy={true} smooth={true} hashSpy={true}  offset={50} duration={500} delay={1000} isDynamic={true}>
               <button 
